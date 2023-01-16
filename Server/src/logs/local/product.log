@@ -4298,3 +4298,5 @@
     at readableAddChunk (node:internal/streams/readable:289:9)
     at Socket.Readable.push (node:internal/streams/readable:228:10)
     at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[[32minfo[39m] product: 1/16/2023, 4:28:04 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:29:43 PM  Sucessfully fetched 10 products for page 1

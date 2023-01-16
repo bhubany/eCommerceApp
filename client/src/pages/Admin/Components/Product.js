@@ -303,10 +303,10 @@ export default function Product() {
                           <TableCell>{brand}</TableCell>
                           <TableCell>{quantity}</TableCell>
                           <TableCell>
-                            <ViewProduct product={product} />
+                            <ViewProduct key={id} product={product} />
                           </TableCell>
                           <TableCell>
-                            <EditProduct product={product} />
+                            <EditProduct key={id + id} product={product} />
                           </TableCell>
                           <TableCell>
                             <Button
