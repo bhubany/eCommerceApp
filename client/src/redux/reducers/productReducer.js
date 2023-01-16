@@ -96,7 +96,7 @@ export const delete_product_reducer = (state = productActionInitialState, { type
       return {
         ...state,
         status: 'failed',
-        message: payload,
+        message: payload?.data,
       };
     default:
       return state;

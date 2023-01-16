@@ -68,11 +68,9 @@ const add_product = async (
       images,
     });
     if (await store.product.add_product(product)) {
-      console.log("Product added to Database sucessfully");
       return "Product added to Database sucessfully";
     }
   } catch (err) {
-    console.log(`${err.name} => ${err.message}`);
     throw err;
   }
 };
@@ -90,11 +88,9 @@ const add_product = async (
 const remove_product = async (productId) => {
   try {
     if (await store.product.delete_product(productId)) {
-      console.log("Product removed sucessfully");
       return "Product removed sucessfully";
     }
   } catch (err) {
-    console.log(`${err.name} => ${err.message}`);
     throw err;
   }
 };
@@ -138,11 +134,9 @@ const update_product = async (
       return "Product updated sucessfully";
     }
   } catch (err) {
-    console.log(`${err.name} => ${err.message}`);
     throw err;
   }
 };
-// update_product("fed0f0e2-3a16-488a-bb23-a0fa7b2840f9",category="Radio", model= "SY-324", brand = "Sony", description="Sony Radio With Smart Features", price="10000", quantity="30", rating="4.6");
 
 /* Management: Prepare revenue report
 @params 
@@ -151,7 +145,6 @@ const update_product = async (
 const prepare_revenue_report = () => {
   try {
   } catch (err) {
-    console.log(`${err.name} => ${err.message}`);
     throw err;
   }
 };
@@ -160,7 +153,6 @@ const prepare_revenue_report = () => {
 const prepare_ar_aging_report = () => {
   try {
   } catch (err) {
-    console.log(`${err.name} => ${err.message}`);
     throw err;
   }
 };

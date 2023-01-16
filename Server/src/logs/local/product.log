@@ -4260,3 +4260,41 @@
 [[32minfo[39m] product: 1/16/2023, 4:14:57 PM  Sucessfully fetched product on ID: 48c90265-ad5c-4741-8e6d-7c8f9e92dc39
 [[32minfo[39m] product: 1/16/2023, 4:14:57 PM  Sucessfully fetched product on ID: 9f668aa0-608d-423b-b232-7d0099153ba4
 [[32minfo[39m] product: 1/16/2023, 4:14:57 PM  Sucessfully fetched product on ID: 32062f0c-e217-4ccc-9e73-addb649d1900
+[[32minfo[39m] product: 1/16/2023, 4:24:20 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:24:20 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:24:20 PM  Sucessfully fetched 5 products for page 1
+[[31merror[39m] product: 1/16/2023, 4:24:26 PM  error: update or delete on table "products" violates foreign key constraint "fk_reviews_productid" on table "reviews"
+    at Parser.parseErrorMessage (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:287:98)
+    at Parser.handlePacket (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[[32minfo[39m] product: 1/16/2023, 4:25:37 PM  Sucessfully removed product on ID: 0fbbbe4a-5764-46e1-80a4-84e91c58713c
+[[32minfo[39m] product: 1/16/2023, 4:25:37 PM  Sucessfully fetched 5 products for page 1
+[[31merror[39m] product: 1/16/2023, 4:26:59 PM  error: update or delete on table "products" violates foreign key constraint "fk_reviews_productid" on table "reviews"
+    at Parser.parseErrorMessage (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:287:98)
+    at Parser.handlePacket (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[[32minfo[39m] product: 1/16/2023, 4:27:04 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:27:04 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:27:04 PM  Sucessfully fetched 5 products for page 1
+[[31merror[39m] product: 1/16/2023, 4:27:09 PM  error: update or delete on table "products" violates foreign key constraint "fk_reviews_productid" on table "reviews"
+    at Parser.parseErrorMessage (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:287:98)
+    at Parser.handlePacket (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
