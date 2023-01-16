@@ -4300,3 +4300,131 @@
     at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
 [[32minfo[39m] product: 1/16/2023, 4:28:04 PM  Sucessfully fetched 10 products for page 1
 [[32minfo[39m] product: 1/16/2023, 4:29:43 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:31:01 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:31:02 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:31:02 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:31:42 PM  Sucessfully added product
+[[32minfo[39m] product: 1/16/2023, 4:31:42 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:31:46 PM  Sucessfully added product
+[[32minfo[39m] product: 1/16/2023, 4:31:46 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:31:54 PM  Sucessfully added product
+[[32minfo[39m] product: 1/16/2023, 4:31:55 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:05 PM  Sucessfully updated product on Id: 35cbe143-c8a7-431b-838f-196d3e4f5bab
+[[32minfo[39m] product: 1/16/2023, 4:32:05 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:05 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:05 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:05 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:05 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:16 PM  Sucessfully removed product on ID: 35cbe143-c8a7-431b-838f-196d3e4f5bab
+[[32minfo[39m] product: 1/16/2023, 4:32:16 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:23 PM  Sucessfully removed product on ID: aa30171d-f107-4b99-97f0-b3ceaa744aa4
+[[32minfo[39m] product: 1/16/2023, 4:32:23 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:32:52 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:33:52 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:34:47 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:34:49 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:34:53 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:10 PM  Fetched Products for Keyword : shampoo
+[[32minfo[39m] product: 1/16/2023, 4:35:12 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:12 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:12 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:15 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:15 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:22 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:22 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:22 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:22 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:22 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:23 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:23 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:23 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:33 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:39 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:39 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 8ad9bd42-5b9a-4ce1-bf07-99e7c5d94e19
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:40 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:46 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:35:46 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:46 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:35:46 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:39:52 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:39:59 PM  Sucessfully fetched product on ID: e2ab0b2c-8df2-418e-a779-1a064aeb4ac8
+[[32minfo[39m] product: 1/16/2023, 4:40:02 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:40:04 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:40:38 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:40:38 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:41:14 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:41:14 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:41:35 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:41:35 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:41:38 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:41:38 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:41:53 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:41:57 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:42:19 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:42:22 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:42:26 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:42:26 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:42:26 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:43:13 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:43:13 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:43:13 PM  Sucessfully fetched product on ID: c7480951-249e-4be4-9e88-d3a08fa7f34a
+[[32minfo[39m] product: 1/16/2023, 4:44:02 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:44:02 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:44:02 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:47:25 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:47:38 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:47:38 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:47:38 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:47:55 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:47:55 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:47:55 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:48:11 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:48:22 PM  Sucessfully fetched all products
+[[32minfo[39m] product: 1/16/2023, 4:48:22 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:48:22 PM  Sucessfully fetched 5 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:51:18 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:51:20 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:51:22 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:51:24 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:51:24 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:51:24 PM  Sucessfully fetched product on ID: 485ebfcd-3518-4fd5-a028-c94e3ad2c0a2
+[[32minfo[39m] product: 1/16/2023, 4:55:09 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:55:10 PM  Sucessfully fetched product on ID: 97ff2607-b6f1-42a7-a10e-b972c975b134
+[[32minfo[39m] product: 1/16/2023, 4:55:12 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:55:14 PM  Sucessfully fetched product on ID: 563d6af7-e277-4a74-95c2-dfba4b2e0b21
+[[32minfo[39m] product: 1/16/2023, 4:55:16 PM  Sucessfully fetched product on ID: 563d6af7-e277-4a74-95c2-dfba4b2e0b21
+[[32minfo[39m] product: 1/16/2023, 4:55:19 PM  Sucessfully fetched product on ID: 563d6af7-e277-4a74-95c2-dfba4b2e0b21
+[[32minfo[39m] product: 1/16/2023, 4:55:19 PM  Sucessfully fetched product on ID: 563d6af7-e277-4a74-95c2-dfba4b2e0b21
+[[32minfo[39m] product: 1/16/2023, 4:55:19 PM  Sucessfully fetched product on ID: 563d6af7-e277-4a74-95c2-dfba4b2e0b21
+[[32minfo[39m] product: 1/16/2023, 4:57:11 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:57:14 PM  Sucessfully fetched product on ID: 32062f0c-e217-4ccc-9e73-addb649d1900
+[[32minfo[39m] product: 1/16/2023, 4:57:17 PM  Sucessfully fetched 10 products for page 1
+[[32minfo[39m] product: 1/16/2023, 4:57:20 PM  Sucessfully fetched product on ID: 2b24fd3f-5163-4528-8b96-603470b47aaf
+[[32minfo[39m] product: 1/16/2023, 4:57:21 PM  Sucessfully fetched product on ID: 2b24fd3f-5163-4528-8b96-603470b47aaf
+[[32minfo[39m] product: 1/16/2023, 4:57:24 PM  Sucessfully fetched product on ID: 2b24fd3f-5163-4528-8b96-603470b47aaf
+[[32minfo[39m] product: 1/16/2023, 4:57:24 PM  Sucessfully fetched product on ID: 2b24fd3f-5163-4528-8b96-603470b47aaf
+[[32minfo[39m] product: 1/16/2023, 4:57:24 PM  Sucessfully fetched product on ID: 2b24fd3f-5163-4528-8b96-603470b47aaf
+[[32minfo[39m] product: 1/16/2023, 5:01:11 PM  Sucessfully fetched 10 products for page 1

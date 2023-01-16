@@ -676,3 +676,56 @@
 [[32minfo[39m] user: 1/16/2023, 4:27:04 PM  Sucessfully fetched all users
 [[32minfo[39m] user: 1/16/2023, 4:27:04 PM  Sucessfully fetched 5 users for page 1
 [[32minfo[39m] user: 1/16/2023, 4:27:04 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:31:01 PM  User: bhuban.smaitic@gmail.com login Sucessfully
+[[32minfo[39m] user: 1/16/2023, 4:31:01 PM  Sucessfully fetched all users
+[[32minfo[39m] user: 1/16/2023, 4:31:02 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:31:02 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:33:18 PM  User registered Sucessfully
+[[32minfo[39m] user: 1/16/2023, 4:33:28 PM  User: yadav.bhuban.by@gmail.com login Sucessfully
+[[32minfo[39m] user: 1/16/2023, 4:33:42 PM  User details Updated Sucessfully for ID: 1a40230f-d80a-4c5d-9288-23aa8ad0f58d
+[[32minfo[39m] user: 1/16/2023, 4:33:42 PM  Sucessfully fetched user on ID: 1a40230f-d80a-4c5d-9288-23aa8ad0f58d
+[[32minfo[39m] user: 1/16/2023, 4:44:02 PM  Sucessfully fetched all users
+[[32minfo[39m] user: 1/16/2023, 4:44:02 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:44:02 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:44:22 PM  Sucessfully fetched user on ID: 1a40230f-d80a-4c5d-9288-23aa8ad0f58d
+[[32minfo[39m] user: 1/16/2023, 4:44:54 PM  Sucessfully fetched user on ID: 1a40230f-d80a-4c5d-9288-23aa8ad0f58d
+[[32minfo[39m] user: 1/16/2023, 4:45:06 PM  Sucessfully fetched user on ID: 1a40230f-d80a-4c5d-9288-23aa8ad0f58d
+[[32minfo[39m] user: 1/16/2023, 4:47:21 PM  User Role Updated Sucessfully presented on ID: 1a40230f-d80a-4c5d-9288-23aa8ad0f58d
+[[32minfo[39m] user: 1/16/2023, 4:47:21 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:21 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:21 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:21 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:21 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:38 PM  User: yadav.bhuban.by@gmail.com login Sucessfully
+[[32minfo[39m] user: 1/16/2023, 4:47:38 PM  Sucessfully fetched all users
+[[32minfo[39m] user: 1/16/2023, 4:47:38 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:38 PM  Sucessfully fetched 5 users for page 1
+[[31merror[39m] user: 1/16/2023, 4:47:45 PM  error: update or delete on table "users" violates foreign key constraint "fk_carts" on table "carts"
+    at Parser.parseErrorMessage (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:287:98)
+    at Parser.handlePacket (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[[32minfo[39m] user: 1/16/2023, 4:47:55 PM  Sucessfully fetched all users
+[[32minfo[39m] user: 1/16/2023, 4:47:55 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:47:55 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:48:01 PM  Sucessfully fetched 5 users for page 2
+[[32minfo[39m] user: 1/16/2023, 4:48:01 PM  Sucessfully fetched 5 users for page 2
+[[32minfo[39m] user: 1/16/2023, 4:48:22 PM  User: bhuban.smaitic@gmail.com login Sucessfully
+[[32minfo[39m] user: 1/16/2023, 4:48:22 PM  Sucessfully fetched all users
+[[32minfo[39m] user: 1/16/2023, 4:48:22 PM  Sucessfully fetched 5 users for page 1
+[[32minfo[39m] user: 1/16/2023, 4:48:22 PM  Sucessfully fetched 5 users for page 1
+[[31merror[39m] user: 1/16/2023, 4:48:28 PM  error: update or delete on table "users" violates foreign key constraint "fk_carts" on table "carts"
+    at Parser.parseErrorMessage (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:287:98)
+    at Parser.handlePacket (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)

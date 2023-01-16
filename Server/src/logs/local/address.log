@@ -4179,3 +4179,78 @@
 [[32minfo[39m] address: 1/16/2023, 4:27:05 PM  All countries fetched  sucessfully
 [[32minfo[39m] address: 1/16/2023, 4:27:05 PM  All countries fetched  sucessfully
 [[32minfo[39m] address: 1/16/2023, 4:27:05 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:31:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:31:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:31:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:31:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:31:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:35:58 PM  All countries fetched  sucessfully
+[[31merror[39m] address: 1/16/2023, 4:36:05 PM  Error: Error occur fetching states by country Id
+    at Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/repository/address.repository.js:39:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/address.service.js:35:20)
+    at async read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/address.js:44:20)
+[[32minfo[39m] address: 1/16/2023, 4:36:05 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 4:36:08 PM  All districts fetched  sucessfully for state on ID: 2
+[[32minfo[39m] address: 1/16/2023, 4:36:10 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 1/16/2023, 4:42:38 PM  All countries fetched  sucessfully
+[[31merror[39m] address: 1/16/2023, 4:42:43 PM  Error: Error occur fetching states by country Id
+    at Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/repository/address.repository.js:39:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/address.service.js:35:20)
+    at async read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/address.js:44:20)
+[[32minfo[39m] address: 1/16/2023, 4:42:43 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 4:42:47 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 1/16/2023, 4:44:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:54 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:54 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:54 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:54 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:44:54 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:45:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:45:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:45:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:45:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:45:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:56 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:56 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:56 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:56 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:47:56 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:48:23 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:48:23 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:48:23 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:48:23 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:48:23 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:51:26 PM  All countries fetched  sucessfully
+[[31merror[39m] address: 1/16/2023, 4:51:30 PM  Error: Error occur fetching states by country Id
+    at Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/repository/address.repository.js:39:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/address.service.js:35:20)
+    at async read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/address.js:44:20)
+[[32minfo[39m] address: 1/16/2023, 4:51:30 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 4:51:36 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 1/16/2023, 4:55:21 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:55:26 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 4:55:30 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 1/16/2023, 4:57:27 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 4:57:33 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 4:57:34 PM  All districts fetched  sucessfully for state on ID: 1
+[[32minfo[39m] address: 1/16/2023, 4:57:35 PM  All districts fetched  sucessfully for state on ID: 2

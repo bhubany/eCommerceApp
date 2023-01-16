@@ -35,10 +35,15 @@ export const sendRegisterationVerificationEmail = async (to, name) => {
 };
 
 export const sendOrderDetailsEmail = async (to, name, table) => {
-  return await sendEmail(EmailTemplate.ORDER_DETAILS_EMAIL, to, name, {
-    fname: name.split(' ')[0],
+  return await sendEmail(
+    EmailTemplate.ORDER_DETAILS_EMAIL,
+    to,
+    name,
+    {
+      fname: name.split(' ')[0],
+    },
     table,
-  });
+  );
 };
 
 export const sendOrderUpdatesEmail = async (to, name, order_status) => {

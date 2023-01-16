@@ -43,7 +43,7 @@ const Order = (
     totalBill: totalBill + shipmentCharge,
     shippingAddress: value,
     payment: { type: paymentType, status: paymentStatus },
-    shipment: { type: shipmentType, status: "review" },
+    shipment: { type: shipmentType, status: "pending" },
     orderStatus: "pending",
   };
 };

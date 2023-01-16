@@ -26,7 +26,7 @@ export default function ShippingForm() {
   const login = useSelector((state) => state.login);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const userFullName = `${login.firstNmae} ${login.middleNmae} ${login.lastNmae}`;
+  const userFullName = `${login.firstName} ${login.middleName} ${login.lastName}`;
 
   const userId = login.isLogined ? login.userId : null;
 
