@@ -4254,3 +4254,130 @@
 [[32minfo[39m] address: 1/16/2023, 4:57:33 PM  All states fetched  sucessfully for country on ID: 145
 [[32minfo[39m] address: 1/16/2023, 4:57:34 PM  All districts fetched  sucessfully for state on ID: 1
 [[32minfo[39m] address: 1/16/2023, 4:57:35 PM  All districts fetched  sucessfully for state on ID: 2
+[[32minfo[39m] address: 1/16/2023, 5:04:28 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:04:28 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:04:28 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:04:28 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:04:28 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:11:19 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:11:30 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 5:11:33 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 1/16/2023, 5:13:06 PM  All countries fetched  sucessfully
+[[31merror[39m] address: 1/16/2023, 5:13:12 PM  Error: Error occur fetching states by country Id
+    at Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/repository/address.repository.js:39:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/address.service.js:35:20)
+    at async read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/address.js:44:20)
+[[32minfo[39m] address: 1/16/2023, 5:13:12 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 1/16/2023, 5:13:14 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 1/16/2023, 5:13:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:13:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:13:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:13:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:13:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:31 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:31 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:31 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:31 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:31 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:14:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:26 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:26 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:26 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:26 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:26 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:38 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:53 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:53 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:53 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:53 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:15:53 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:16:03 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:16:03 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:16:03 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:16:03 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:16:03 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:18:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:18:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:18:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:18:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 5:18:22 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:17:10 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:17:10 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:17:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:17:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:17:11 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:29 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:29 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:29 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:29 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/16/2023, 6:18:29 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:48:12 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:48:12 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:48:12 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:48:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:48:13 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:02 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:37 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:37 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:37 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:37 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:37 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/17/2023, 1:50:50 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 1/27/2023, 12:10:21 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:44:43 PM  All countries fetched  sucessfully
+[[31merror[39m] address: 3/8/2023, 7:44:46 PM  Error: Error occur fetching states by country Id
+    at Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/repository/address.repository.js:39:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/address.service.js:35:20)
+    at async read_states_by_country_id (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/address.js:44:20)
+[[32minfo[39m] address: 3/8/2023, 7:45:05 PM  All states fetched  sucessfully for country on ID: 145
+[[32minfo[39m] address: 3/8/2023, 7:45:11 PM  All districts fetched  sucessfully for state on ID: 3
+[[32minfo[39m] address: 3/8/2023, 7:46:55 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:46:55 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:46:55 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:46:55 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:46:55 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:43 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:43 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:43 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:43 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:44 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:58 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:58 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:58 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:58 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:47:58 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:48:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:48:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:48:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:48:06 PM  All countries fetched  sucessfully
+[[32minfo[39m] address: 3/8/2023, 7:48:06 PM  All countries fetched  sucessfully

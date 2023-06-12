@@ -35,7 +35,7 @@ Phase 2:
 	-> Mongodb/MySQl/PostGres
 
 Phase 3:
- 	API Implementa	tion 
+ 	API Implementation 
  	-> express
 
 Phase 4:

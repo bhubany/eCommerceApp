@@ -9,7 +9,7 @@ import Mustache from 'mustache';
  */
 
 export const prepareTemplateMsg = (template, msgData, table = {}) => {
-  console.log(table);
+  // console.log(table);
   let genTable = `
   <table style="border-collapse: collapse; width: 100%">
     <thead style="color: #1976d2">
@@ -38,7 +38,7 @@ export const prepareTemplateMsg = (template, msgData, table = {}) => {
     </table>`;
     msgData.order_table = genTable;
   }
-  console.log(msgData);
+  // console.log(msgData);
   template.content = Mustache.render(template.content, msgData);
   return template;
 };

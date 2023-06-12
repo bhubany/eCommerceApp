@@ -1285,3 +1285,94 @@
     at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:41:26)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 1/16/2023, 5:04:27 PM  Sucessfully fetched all carts 
+[[31merror[39m] cart: 1/16/2023, 5:10:03 PM  Error: Error occurs Try adding Product in cart.
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:44:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 1/16/2023, 5:10:09 PM  Product added to cart sucessfully on ID: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:10:09 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:10:56 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:10:56 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:10:58 PM  Product added to cart sucessfully on ID: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:10:58 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:11:02 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:11:10 PM  Product removed sucessfully from cart: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:11:10 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:11:16 PM  Product quantity updated sucessfully for user: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:11:16 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[31merror[39m] cart: 1/16/2023, 5:11:48 PM  Error: No user Found for ID: 
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:41:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[31merror[39m] cart: 1/16/2023, 5:12:57 PM  Error: Error occurs Try adding Product in cart.
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:44:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[31merror[39m] cart: 1/16/2023, 5:12:57 PM  Error: Error occurs Try adding Product in cart.
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:44:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 1/16/2023, 5:12:59 PM  Product added to cart sucessfully on ID: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:12:59 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:13:02 PM  Product added to cart sucessfully on ID: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:13:02 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/16/2023, 5:13:04 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[31merror[39m] cart: 1/16/2023, 5:13:29 PM  Error: No user Found for ID: 
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:41:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 1/16/2023, 5:13:49 PM  Sucessfully fetched all carts 
+[[32minfo[39m] cart: 1/16/2023, 5:18:22 PM  Sucessfully fetched all carts 
+[[32minfo[39m] cart: 1/16/2023, 6:15:07 PM  Sucessfully fetched carts for user : 19c67528-a30c-4bb5-9ea4-1dc7bd65e31c
+[[32minfo[39m] cart: 1/16/2023, 6:15:07 PM  Sucessfully fetched carts for user : 19c67528-a30c-4bb5-9ea4-1dc7bd65e31c
+[[32minfo[39m] cart: 1/16/2023, 6:16:34 PM  Sucessfully fetched carts for user : 19c67528-a30c-4bb5-9ea4-1dc7bd65e31c
+[[32minfo[39m] cart: 1/16/2023, 6:17:10 PM  Sucessfully fetched all carts 
+[[32minfo[39m] cart: 1/17/2023, 1:48:12 PM  Sucessfully fetched all carts 
+[[32minfo[39m] cart: 1/17/2023, 1:50:01 PM  Sucessfully fetched all carts 
+[[32minfo[39m] cart: 1/17/2023, 1:50:37 PM  Sucessfully fetched all carts 
+[[32minfo[39m] cart: 1/17/2023, 1:50:49 PM  Sucessfully fetched all carts 
+[[31merror[39m] cart: 1/17/2023, 1:51:53 PM  Error: Error occurs Try adding Product in cart.
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:44:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[31merror[39m] cart: 1/17/2023, 1:51:54 PM  Error: Error occurs Try adding Product in cart.
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:44:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 1/17/2023, 1:52:35 PM  Product added to cart sucessfully on ID: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/17/2023, 1:52:36 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/17/2023, 1:53:01 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/27/2023, 12:09:55 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/27/2023, 12:09:58 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/27/2023, 12:10:01 PM  Product added to cart sucessfully on ID: 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/27/2023, 12:10:01 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[32minfo[39m] cart: 1/27/2023, 12:10:05 PM  Sucessfully fetched carts for user : 484e1851-6ee6-4b9f-9f6b-1da8a9a7a883
+[[31merror[39m] cart: 3/8/2023, 7:44:10 PM  Error: Error occurs Try adding Product in cart.
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:44:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 3/8/2023, 7:44:13 PM  Product added to cart sucessfully on ID: a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:13 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:24 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:24 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:26 PM  Product added to cart sucessfully on ID: a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:26 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:29 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:38 PM  Product quantity updated sucessfully for user: a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:38 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[32minfo[39m] cart: 3/8/2023, 7:44:38 PM  Sucessfully fetched carts for user : a180ced3-153a-46a0-a5b6-1ce061f6bac6
+[[31merror[39m] cart: 3/8/2023, 7:45:50 PM  Error: No user Found for ID: 
+    at Object.get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/service/cartService.js:41:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async get_user_cart (/media/bhuban/72E2928AE29251E9/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/Server/src/api/cartApi.js:34:17)
+[[32minfo[39m] cart: 3/8/2023, 7:46:55 PM  Sucessfully fetched all carts 
