@@ -5,6 +5,7 @@ module.exports = {
       'babel-plugin-styled-components',
       {
         displayName: false,
+        ssr: false,
       },
     ],
   ],

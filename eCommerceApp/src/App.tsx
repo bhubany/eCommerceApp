@@ -1,12 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
-import {StyledButton, ButtonText} from './componennts/firstStyle';
+import Layout from 'layout';
 
 const App = () => (
   <View>
-    <StyledButton>
-      <ButtonText>Hello World!</ButtonText>
-    </StyledButton>
+    <Layout />
   </View>
 );
 
