@@ -1,10 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
-import Layout from 'layout';
+import Navigation from './navigation';
 
 const App = () => (
-  <View>
-    <Layout />
+  <View style={{flex: 1}}>
+    <Navigation />
   </View>
 );
 
