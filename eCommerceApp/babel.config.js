@@ -8,5 +8,6 @@ module.exports = {
         ssr: false,
       },
     ],
+    'react-native-reanimated/plugin',
   ],
 };
