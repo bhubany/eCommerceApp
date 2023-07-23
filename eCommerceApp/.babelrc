@@ -7,7 +7,12 @@
         "alias": {
           "components": "./src/components",
           "screens": "./src/screens",
-          "layout": "./src/layout"
+          "layout": "./src/layout",
+          "navigation": "./src/navigation",
+          "store": "./src/store",
+          "icons": "./src/assets/icons",
+          "api": "./src/api",
+          "common": "./src/common"
         }
       }
     ]

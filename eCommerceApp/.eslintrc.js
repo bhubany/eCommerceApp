@@ -1,11 +1,12 @@
 module.exports = {
-  root: true,
-  extends: '@react-native',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2022,
+    project: 'tsconfig.json',
+    tsconfigRootDir: __dirname,
     sourceType: 'module',
-    requireConfigFile: false,
   },
+  ignorePatterns: ['.eslintrc.js'],
+  root: true,
   settings: {
     'import/resolver': {
       alias: {
@@ -20,4 +21,10 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
+  plugins: ['@typescript-eslint/eslint-plugin'],
+  extends: [
+    '@react-native',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
 };

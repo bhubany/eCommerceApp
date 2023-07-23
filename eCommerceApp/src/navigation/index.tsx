@@ -1,10 +1,16 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {useState} from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import PublicNavigation from 'navigation/public.navigation';
+import PrivateNavigation from './private.navigation';
 
-export function Navigation(): JSX.Element {
+const Navigation = () => {
+  const [isLoggedIn, setIsloggedIn] = useState(false);
+
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <NavigationContainer>
+      {isLoggedIn ? <PrivateNavigation /> : <PublicNavigation />}
+    </NavigationContainer>
   );
-}
+};
+
+export default Navigation;
