@@ -1,25 +1,44 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Home from 'screens/home';
-import SignIn from 'screens/signin';
-import SignUp from 'screens/signup';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import CustomMenuItem from './../componennts/navigation';
 
 const Drawer = createDrawerNavigator();
-const HomeIcon = () => <MaterialIcons name="home" color={'blue'} size={24} />;
+const HomeIcon = ({color = '', size = 24}) => (
+  <MaterialIcons name="home" color={color} size={size} />
+);
+const ProfileIcon = ({color = '', size = 24}) => (
+  <MaterialIcons name="person" color={color} size={size} />
+);
+
 const PublicNavigation = () => {
   return (
-    <Drawer.Navigator screenOptions={{headerShown: false}}>
+    <Drawer.Navigator
+      drawerContent={props => <CustomMenuItem {...props} />}
+      screenOptions={{
+        drawerActiveBackgroundColor: '#1976d2',
+        drawerActiveTintColor: '#fff',
+        drawerInactiveTintColor: '#1976d2',
+        drawerLabelStyle: {marginLeft: 10},
+        headerShown: false,
+      }}>
       <Drawer.Screen
-        name="home"
+        name="Home"
         component={Home}
         options={{
           lazy: true,
           drawerIcon: HomeIcon,
         }}
       />
-      <Drawer.Screen name="signin" component={SignIn} />
-      <Drawer.Screen name="signup" component={SignUp} />
+      <Drawer.Screen
+        name="Profile"
+        component={Home}
+        options={{
+          lazy: true,
+          drawerIcon: ProfileIcon,
+        }}
+      />
     </Drawer.Navigator>
   );
 };
