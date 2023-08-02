@@ -1,9 +1,10 @@
+import {STATUS} from 'common/enums';
+
 export interface UserDetails
   extends Omit<Omit<UserResponse, 'id'>, 'password'> {
   userId: string;
   isLogined: boolean;
-  isLoading: boolean;
-  isError: boolean;
+  status: STATUS;
 }
 
 export type UserResponse = {

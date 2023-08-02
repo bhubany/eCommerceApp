@@ -3,11 +3,14 @@ import styled from 'styled-components';
 
 export const LayoutContainer = styled(View)`
   height: 100%;
+  width: 100%;
 `;
 
 export const LayoutContent = styled(ScrollView)`
-  border-radius: 5px;
   border-color: #1976d2;
-  margin-left: 10px;
-  margin-right: 10px;
+  border-width: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  width: 100%;
 `;

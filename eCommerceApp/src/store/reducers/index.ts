@@ -14,7 +14,7 @@ const persistedReducer = persistCombineReducers(persistConfig, {
     {
       key: 'user',
       storage: AsyncStorage,
-      blacklist: ['isLoading', 'message', 'isError'],
+      blacklist: ['message', 'status'],
       whitelist: ['whitelistedReducer'],
     },
     userReducer,

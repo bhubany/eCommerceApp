@@ -1,4 +1,5 @@
 import {createSlice, Reducer, AnyAction} from '@reduxjs/toolkit';
+import {STATUS} from 'common/enums';
 import {UserDetails, RegisterDetails} from 'common/types';
 import {userLogin, userRegister} from 'store/actions';
 
@@ -13,12 +14,11 @@ const initialStateLogin: UserDetails = {
   role: null,
   imageurl: '',
   imagealttext: '',
-  isLoading: false,
-  isError: false,
   message: '',
   createdat: '',
   updatedat: '',
   updatedby: '',
+  status: STATUS.PENDING,
 };
 
 const initialStateRegister: RegisterDetails = {
@@ -40,22 +40,22 @@ const userSlice = createSlice({
       .addCase(userLogin.pending, (state, action) => {
         state.login = {
           ...initialStateLogin,
-          isLoading: true,
+          status: STATUS.LOADING,
         };
       })
       .addCase(userLogin.fulfilled, (state, action) => {
         state.login = {
           ...state.login,
           ...action.payload,
-          isLoading: false,
+          status: STATUS.SUCCESS,
+          message: 'Login Sucessful!',
           isLogined: true,
         };
       })
       .addCase(userLogin.rejected, (state, action) => {
         state.login = {
           ...initialStateLogin,
-          isLoading: false,
-          isError: true,
+          status: STATUS.FAILED,
           message: action.error.message || 'Unknown error occurred',
         };
       })
