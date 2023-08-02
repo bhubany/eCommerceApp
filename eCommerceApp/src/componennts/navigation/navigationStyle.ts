@@ -22,15 +22,15 @@ export const MenueBgImageWrapper = styled(ImageBackground)`
 export const UserImageWrapper = styled(Image)`
   width: 80px;
   height: 80px;
-  // border: solid blue 1px;
   border-radius: 50px;
 `;
 
 export const UserNameWrapper = styled(Text)`
   color: orange;
-  // background-color: blue;
   font-size: 20px;
   font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const DrawerListWrapper = styled(View)`

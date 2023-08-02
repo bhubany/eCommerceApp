@@ -21,6 +21,10 @@ import {
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {HorizontalLine} from 'common/styles';
+import {loginState} from 'store/selectors';
+import {useSelector} from 'react-redux';
+import {UserDetails} from 'common/types';
+import {errorToast, successToast} from 'common/utils';
 const ShareIcon = ({color = '#1976d2', size = 16}) => (
   <MaterialIcons name="share" color={color} size={size} />
 );
@@ -29,6 +33,8 @@ const SignOutIcon = ({color = '#1976d2', size = 16}) => (
 );
 
 const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
+  const login: UserDetails = useSelector(loginState);
+  const {navigation} = props;
   const handleTellAFriend = async () => {
     try {
       const options: ShareOptions = {
@@ -38,25 +44,29 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
       };
 
       const result = await Share.open(options);
-      console.log(result); // we can manage shared details to db
+      successToast(result.message); // we can manage shared details to db
     } catch (error: any) {
-      console.log(error.message);
+      errorToast(error.message);
     }
   };
 
   const handleLogout = () => {
     try {
-      console.warn('Logout Sucessfully');
+      successToast('Logout Sucessfully');
     } catch (error: any) {
-      console.log(error.message);
+      errorToast(error.message);
     }
   };
 
   const handleLoginOrProfile = () => {
     try {
-      console.warn('login/profile clicked');
+      if (login && login.isLogined) {
+        navigation.navigate('profile');
+      } else {
+        navigation.navigate('signin');
+      }
     } catch (error: any) {
-      console.log(error.message);
+      errorToast(error.message);
     }
   };
 
@@ -66,9 +76,16 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
         {...props}
         contentContainerStyle={{backgroundColor: 'orange'}}>
         <MenueBgImageWrapper source={bgCart}>
-          <UserImageWrapper source={userProfile} />
+          <UserImageWrapper
+            source={login && login.isLogined ? login.imageurl : userProfile}
+            alt={
+              login && login.isLogined ? login.imagealttext : 'user profile pic'
+            }
+          />
           <TouchableOpacity onPress={() => handleLoginOrProfile()}>
-            <UserNameWrapper>Current User</UserNameWrapper>
+            <UserNameWrapper>
+              {login && login.isLogined ? `Hello ${login.firstname}` : 'signin'}
+            </UserNameWrapper>
           </TouchableOpacity>
         </MenueBgImageWrapper>
         <DrawerListWrapper>
@@ -85,13 +102,14 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
             <DrawerFooterItemContent>Tell a friend !</DrawerFooterItemContent>
           </DrawerFooterItemWrapper>
         </TouchableOpacity>
-
-        <TouchableOpacity onPress={() => handleLogout()}>
-          <DrawerFooterItemWrapper>
-            <SignOutIcon />
-            <DrawerFooterItemContent>Sign Out</DrawerFooterItemContent>
-          </DrawerFooterItemWrapper>
-        </TouchableOpacity>
+        {login && login.isLogined ? (
+          <TouchableOpacity onPress={() => handleLogout()}>
+            <DrawerFooterItemWrapper>
+              <SignOutIcon />
+              <DrawerFooterItemContent>Sign Out</DrawerFooterItemContent>
+            </DrawerFooterItemWrapper>
+          </TouchableOpacity>
+        ) : null}
       </DrawerFooterListWrapper>
     </CustomMenuContainer>
   );
