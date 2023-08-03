@@ -22,9 +22,10 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {HorizontalLine} from 'common/styles';
 import {loginState} from 'store/selectors';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {UserDetails} from 'common/types';
 import {errorToast, successToast} from 'common/utils';
+import {userLogout} from 'store/reducers/userSlice';
 const ShareIcon = ({color = '#1976d2', size = 16}) => (
   <MaterialIcons name="share" color={color} size={size} />
 );
@@ -33,6 +34,7 @@ const SignOutIcon = ({color = '#1976d2', size = 16}) => (
 );
 
 const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
+  const dispatch = useDispatch();
   const login: UserDetails = useSelector(loginState);
   const {navigation} = props;
   const handleTellAFriend = async () => {
@@ -52,7 +54,9 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
 
   const handleLogout = () => {
     try {
+      dispatch(userLogout());
       successToast('Logout Sucessfully');
+      navigation.navigate('signin');
     } catch (error: any) {
       errorToast(error.message);
     }

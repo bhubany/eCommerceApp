@@ -49,7 +49,7 @@ export const ErrorText = styled(Text)`
 
 export const ButtonWrapper = styled(View)<{errors?: object}>`
   display: ${props =>
-    props.errors && (Object.values(props.errors).length ? 'none' : 'flex')};
+    props.errors && Object.values(props.errors).length ? 'none' : 'flex'};
   justify-content: center;
   align-items: center;
   margin-top: 10px;

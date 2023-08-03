@@ -5,6 +5,8 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import CustomMenuItem from './../componennts/navigation';
 import {createStackNavigator} from '@react-navigation/stack';
 import SignIn from 'screens/signin';
+import SignUp from 'screens/signup';
+import Profile from 'screens/profile';
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -51,9 +53,10 @@ const PublicNavigation = () => {
 export const PublicStackNavigation = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="homeScreen" component={SignIn} />
+      <Stack.Screen name="homeScreen" component={SignUp} />
       <Stack.Screen name="signin" component={SignIn} />
-      <Stack.Screen name="profile" component={SignIn} />
+      <Stack.Screen name="signup" component={SignUp} />
+      <Stack.Screen name="profile" component={Profile} />
     </Stack.Navigator>
   );
 };
