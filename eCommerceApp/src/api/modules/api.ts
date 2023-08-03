@@ -30,9 +30,14 @@ async function apiCall<T>(params: ApiParams): Promise<T> {
     if (!response.ok) {
       throw new Error(await response.text());
     }
-
-    const responseData: T = await response.json();
-    return responseData;
+    const contentType = response.headers.get('content-type');
+    if (contentType?.startsWith('application/json')) {
+      const responseData: T = await response.json();
+      return responseData;
+    } else {
+      // Handle non-JSON responses (e.g., plain text or HTML)
+      return (await response.text()) as T;
+    }
   } catch (error) {
     throw error;
   }

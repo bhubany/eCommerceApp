@@ -1,7 +1,12 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
 import apiCall, {ApiError, ApiParams} from 'api';
 import {user} from 'api/endpoint';
-import {UserLoginValue, UserRegisterDetails, UserResponse} from 'common/types';
+import {
+  RegisterResponse,
+  UserLoginValue,
+  UserRegisterDetails,
+  UserResponse,
+} from 'common/types';
 
 export const userLogin = createAsyncThunk<
   UserResponse | ApiError,
@@ -21,16 +26,17 @@ export const userLogin = createAsyncThunk<
   }
 });
 
-export const userRegister = createAsyncThunk(
-  'user/register',
-  async (value: UserRegisterDetails) => {
+export const userRegister = createAsyncThunk<
+  RegisterResponse | ApiError,
+  UserRegisterDetails
+>('user/register', async (values: UserRegisterDetails) => {
+  try {
     const params: ApiParams = {
       endpoint: user.register,
-      data: {
-        email: value.email,
-        password: value.password,
-      },
+      data: values,
     };
-    return await apiCall(params);
-  },
-);
+    return await apiCall<RegisterResponse>(params);
+  } catch (error: Error | unknown) {
+    throw <ApiError>(error as Error).message;
+  }
+});

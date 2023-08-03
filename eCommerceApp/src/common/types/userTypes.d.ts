@@ -41,9 +41,11 @@ export interface ReducerAction {
   payload: object;
 }
 
+export interface RegisterResponse {
+  message: string;
+}
 export interface RegisterDetails {
-  isLoading: boolean;
-  isError: boolean;
+  status: STATUS;
   message: string;
   isRegistered: boolean;
 }
@@ -52,7 +54,7 @@ export interface UserRegisterDetails {
   firstName: string;
   middleName: string;
   lastName: string;
-  address: Address;
+  address: string;
   email: string;
   password: string;
 }
