@@ -3,6 +3,7 @@ export enum COLORS {
   SECONDARY = '#1b5693',
   SUCCESS = '#00C853',
   WHITE = '#ffffff',
+  GREY = '#808080',
   BLACK = '#000000',
   ERROR = '#CC0000',
 }

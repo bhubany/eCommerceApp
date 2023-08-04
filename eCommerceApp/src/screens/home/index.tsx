@@ -1,13 +1,19 @@
-import {Text} from 'react-native';
-import React from 'react';
+import {carouselImages} from 'common/datas';
 import Layout from 'layout';
+import React from 'react';
+import Carousel from '../../componennts/Carousel';
+import {CarouselWrapper, HomeContainer, HomeWrapper} from './homeStyle';
 
 export default function Home() {
   return (
-    <>
-      <Layout>
-        <Text>This is from Home Page</Text>
-      </Layout>
-    </>
+    <Layout>
+      <HomeContainer>
+        <HomeWrapper>
+          <CarouselWrapper>
+            <Carousel imageList={carouselImages} />
+          </CarouselWrapper>
+        </HomeWrapper>
+      </HomeContainer>
+    </Layout>
   );
 }
