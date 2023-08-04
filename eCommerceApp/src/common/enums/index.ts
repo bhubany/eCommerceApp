@@ -2,6 +2,8 @@ export enum COLORS {
   PRIMARY = '#1976d2',
   SECONDARY = '#1b5693',
   SUCCESS = '#00C853',
+  NAPIES_YELLOW = '#ffdb60',
+  CORAL = ' #FC7651',
   WHITE = '#ffffff',
   GREY = '#808080',
   BLACK = '#000000',

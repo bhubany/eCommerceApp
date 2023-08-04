@@ -15,3 +15,18 @@ export const HorizontalLine = styled(View)<HorizontalLineProps>`
   top: 0;
   left: 0;
 `;
+
+export const AlignHorizontallyCenter = styled(View)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const AlignVerticallyCenter = styled(View)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
