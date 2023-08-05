@@ -21,4 +21,5 @@ export enum STATUS {
   LOADING = 'loading',
   SUCCESS = 'success',
   FAILED = 'failed',
+  COMPLETED = 'completed',
 }

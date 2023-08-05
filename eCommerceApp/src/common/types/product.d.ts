@@ -20,3 +20,14 @@ export interface ProductType {
   updatedat: string | null;
   images: ProductImageType[];
 }
+
+export interface PaginatedProductInputType {
+  page: number;
+  limit: number;
+}
+
+export interface PaginatedProductResponseType {
+  next?: PaginatedProductInputType;
+  previous?: PaginatedProductInputType;
+  data: ProductType[];
+}

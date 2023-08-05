@@ -1,4 +1,4 @@
-import {View, ScrollView} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import styled from 'styled-components';
 
 export const LayoutContainer = styled(View)`
@@ -13,4 +13,5 @@ export const LayoutContent = styled(ScrollView)`
   padding-right: 10px;
   height: 100%;
   width: 100%;
+  z-index: 2;
 `;
