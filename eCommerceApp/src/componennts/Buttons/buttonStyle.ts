@@ -1,7 +1,7 @@
 import {COLORS} from 'common/enums';
-import {ButtonProps} from './button.d';
 import {Text, View} from 'react-native';
 import styled from 'styled-components';
+import {ButtonProps} from './button.d';
 
 export const ButtonContainer = styled(View)`
   position: initial;
@@ -25,6 +25,7 @@ export const ButtonWrapper = styled(View)<ButtonProps>`
   color: ${props => (props.color ? props.color : COLORS.PRIMARY)};
   align-items: center;
   justify-content: center;
+  gap: 10px;
   display: flex;
   flex-direction: row;
 `;
@@ -32,5 +33,10 @@ export const ButtonWrapper = styled(View)<ButtonProps>`
 export const ButtonIconWrapper = styled(View)``;
 
 export const ButtonTextWrapper = styled(Text)<ButtonProps>`
-  color: ${props => (props.color ? props.color : COLORS.PRIMARY)};
+  color: ${props =>
+    props.color
+      ? props.color
+      : !props.outlined
+      ? COLORS.WHITE
+      : COLORS.PRIMARY};
 `;

@@ -16,6 +16,13 @@ export const ProductCardWrapper = styled(View)`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  row-gap: 16px;
 `;
-export const CircleContainer = styled(View)``;
+export const LoadMoreBtnContainer = styled(View)`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+`;
