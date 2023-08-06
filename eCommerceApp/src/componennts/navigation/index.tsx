@@ -1,31 +1,29 @@
-import React from 'react';
-import {View} from 'react-native';
-import Share, {ShareOptions} from 'react-native-share';
-import bgCart from '../../assets/images/download.png';
-import userProfile from '../../assets/images/User-Profile.png';
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
   DrawerItemList,
 } from '@react-navigation/drawer';
+import {HorizontalLine} from 'common/styles';
+import {UserDetails} from 'common/types';
+import {errorToast, successToast} from 'common/utils';
+import React from 'react';
+import {View} from 'react-native';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import Share, {ShareOptions} from 'react-native-share';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {useDispatch, useSelector} from 'react-redux';
+import {userLogout} from 'store/reducers/userSlice';
+import {loginState} from 'store/selectors';
 import {
   CustomMenuContainer,
+  DrawerFooterItemContent,
+  DrawerFooterItemWrapper,
+  DrawerFooterListWrapper,
+  DrawerListWrapper,
   MenueBgImageWrapper,
   UserImageWrapper,
   UserNameWrapper,
-  DrawerListWrapper,
-  DrawerFooterListWrapper,
-  DrawerFooterItemWrapper,
-  DrawerFooterItemContent,
 } from './navigationStyle';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {HorizontalLine} from 'common/styles';
-import {loginState} from 'store/selectors';
-import {useDispatch, useSelector} from 'react-redux';
-import {UserDetails} from 'common/types';
-import {errorToast, successToast} from 'common/utils';
-import {userLogout} from 'store/reducers/userSlice';
 const ShareIcon = ({color = '#1976d2', size = 16}) => (
   <MaterialIcons name="share" color={color} size={size} />
 );
@@ -79,9 +77,14 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
       <DrawerContentScrollView
         {...props}
         contentContainerStyle={{backgroundColor: 'orange'}}>
-        <MenueBgImageWrapper source={bgCart}>
+        <MenueBgImageWrapper
+          source={require('../../assets/images/download.png')}>
           <UserImageWrapper
-            source={login && login.isLogined ? login.imageurl : userProfile}
+            source={
+              login && login.isLogined
+                ? login.imageurl
+                : require('../../assets/images/User-Profile.png')
+            }
             alt={
               login && login.isLogined ? login.imagealttext : 'user profile pic'
             }

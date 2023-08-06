@@ -11,7 +11,6 @@ export const LayoutContent = styled(ScrollView)`
   border-width: 3px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 100%;
-  width: 100%;
+  position: relative;
   z-index: 2;
 `;
