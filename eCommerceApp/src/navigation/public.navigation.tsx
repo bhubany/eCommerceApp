@@ -6,7 +6,6 @@ import Home from 'screens/home';
 import Profile from 'screens/profile';
 import SignIn from 'screens/signin';
 import SignUp from 'screens/signup';
-import Loader from '../componennts/Loader';
 import CustomMenuItem from './../componennts/navigation';
 
 const Drawer = createDrawerNavigator();
@@ -54,7 +53,6 @@ const PublicNavigation = () => {
 export const PublicStackNavigation = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="homes" component={Loader} />
       <Stack.Screen name="homeScreen" component={Home} />
       <Stack.Screen name="signin" component={SignIn} />
       <Stack.Screen name="signup" component={SignUp} />

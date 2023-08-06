@@ -10,7 +10,7 @@ const InfinityIcon = ({color = COLORS.PRIMARY, size = 100}) => (
 );
 
 const Loader = () => {
-  const colors = ['#ff0000', '#00ff00', '#000000ff'];
+  const colors = [COLORS.BLUE, '#ffffff', COLORS.PRIMARY];
   const rotation = useRef(new Animated.Value(0)).current;
   const isFocused = useIsFocused();
 
@@ -25,7 +25,6 @@ const Loader = () => {
         }),
       ).start();
     } else {
-      // Stop the animation when the component is not focused
       rotation.setValue(0);
     }
   }, [isFocused, rotation]);
@@ -33,11 +32,6 @@ const Loader = () => {
   const spin = rotation.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '360deg'],
-  });
-
-  const opacity = rotation.interpolate({
-    inputRange: [0, 100],
-    outputRange: [0, 1],
   });
 
   const circleColor = rotation.interpolate({
@@ -52,12 +46,11 @@ const Loader = () => {
           circleStyles.circle,
           {
             transform: [{rotate: spin}],
-            opacity,
             borderColor: circleColor,
           },
         ]}
       />
-      <InfinityIcon color={COLORS.PRIMARY} />
+      <InfinityIcon />
     </LoaderContainer>
   );
 };
@@ -69,8 +62,8 @@ const circleStyles = StyleSheet.create({
     width: 150,
     height: 150,
     borderRadius: 80,
-    borderWidth: 20,
-    padding: 20,
+    borderWidth: 10,
+    padding: 30,
     borderStyle: 'dotted',
     borderColor: COLORS.WHITE,
     position: 'absolute',
