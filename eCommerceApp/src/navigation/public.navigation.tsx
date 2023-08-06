@@ -4,6 +4,7 @@ import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Home from 'screens/home';
 import Profile from 'screens/profile';
+import SearchProducts from 'screens/search-product';
 import SignIn from 'screens/signin';
 import SignUp from 'screens/signup';
 import CustomMenuItem from './../componennts/navigation';
@@ -15,6 +16,10 @@ const HomeIcon = ({color = '', size = 24}) => (
 );
 const TrackOrderIcon = ({color = '', size = 24}) => (
   <MaterialIcons name="local-shipping" color={color} size={size} />
+);
+
+const SearchIcon = ({color = '', size = 24}) => (
+  <MaterialIcons name="search" color={color} size={size} />
 );
 
 const PublicNavigation = () => {
@@ -46,6 +51,15 @@ const PublicNavigation = () => {
           drawerIcon: TrackOrderIcon,
         }}
       />
+      <Drawer.Screen
+        name="searchProducts"
+        component={SearchProducts}
+        options={{
+          lazy: true,
+          title: 'Search My Products',
+          drawerIcon: SearchIcon,
+        }}
+      />
     </Drawer.Navigator>
   );
 };
@@ -53,6 +67,7 @@ const PublicNavigation = () => {
 export const PublicStackNavigation = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="homeS" component={SearchProducts} />
       <Stack.Screen name="homeScreen" component={Home} />
       <Stack.Screen name="signin" component={SignIn} />
       <Stack.Screen name="signup" component={SignUp} />
