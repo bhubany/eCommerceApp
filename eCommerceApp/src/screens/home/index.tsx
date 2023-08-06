@@ -28,10 +28,6 @@ export default function Home() {
   const [loadingMoreProducts, setLoadingMoreProducts] =
     useState<boolean>(false);
   const scrollViewRef = useRef<ScrollView>(null);
-
-  const handleProductDetail = (id: string) => {
-    infoToast(`Clicked for ID: ${id}`);
-  };
   const perPageLimit = 10;
   const {
     data: {data: actualData, next},
@@ -44,6 +40,11 @@ export default function Home() {
     page: 1,
     limit: perPageLimit,
   });
+
+  //TODO: Navoigate to product detail page on click
+  const handleProductDetail = (id: string) => {
+    infoToast(`Clicked for ID: ${id}`);
+  };
 
   useEffect(() => {
     if (status === STATUS.SUCCESS) {

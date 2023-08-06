@@ -4,6 +4,7 @@ import {STATUS} from 'common/enums';
 import {
   PaginatedProductInputType,
   PaginatedProductResponseType,
+  ProductType,
 } from 'common/types';
 import {useCallback, useEffect, useState} from 'react';
 import {FetchApiDataType} from './hooks';
@@ -98,4 +99,46 @@ export const useFetchLimitedProducts = (
   };
 
   return {...data, hasNext, loadingMore, refetch: fetchNext};
+};
+
+interface SearchProductResponse extends FetchApiDataType<ProductType[]> {
+  fetch: (keyword: string) => void;
+}
+
+export const useSearchProducts = (): SearchProductResponse => {
+  const [data, setData] = useState<FetchApiDataType<ProductType[]>>({
+    data: [],
+    status: STATUS.PENDING,
+    message: null,
+  });
+
+  const fetchData = useCallback((input: any) => {
+    setData(prev => ({
+      ...prev,
+      status: STATUS.LOADING,
+    }));
+
+    const params: ApiParams = {
+      endpoint: product.search,
+      path: {keyword: input},
+    };
+
+    apiCall<ProductType[]>(params)
+      .then(resp => {
+        setData(prevData => ({
+          ...prevData,
+          data: resp,
+          status: STATUS.SUCCESS,
+        }));
+      })
+      .catch(error => {
+        setData(prevData => ({
+          ...prevData,
+          message: error.message.toString(),
+          status: STATUS.FAILED,
+        }));
+      });
+  }, []);
+
+  return {...data, fetch: fetchData};
 };
