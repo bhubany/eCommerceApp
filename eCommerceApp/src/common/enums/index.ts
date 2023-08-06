@@ -3,11 +3,14 @@ export enum COLORS {
   SECONDARY = '#1b5693',
   SUCCESS = '#00C853',
   NAPIES_YELLOW = '#ffdb60',
-  CORAL = ' #FC7651',
+  CORAL = '#fc7651',
   WHITE = '#ffffff',
   GREY = '#808080',
   BLACK = '#000000',
-  ERROR = '#CC0000',
+  ERROR = '#cc0000',
+  RED = '#ff0000',
+  GREEN = '#00ff00',
+  BLUE = '#0000ff',
 }
 
 export enum TOAST_TYPE {

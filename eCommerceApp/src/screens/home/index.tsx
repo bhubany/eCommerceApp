@@ -9,6 +9,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MyButton from '../../componennts/Buttons';
 import ProductCard from '../../componennts/Cards/Product';
 import Carousel from '../../componennts/Carousel';
+import Loader from '../../componennts/Loader';
 import {useFetchLimitedProducts} from '../../hooks';
 import {
   CarouselWrapper,
@@ -80,9 +81,7 @@ export default function Home() {
       !products ||
       !products.length ||
       loadingMoreProducts ? (
-        <View>
-          <Text>Loading...</Text>
-        </View>
+        <Loader />
       ) : (
         <Layout>
           <HomeContainer>
