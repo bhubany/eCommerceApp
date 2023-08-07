@@ -1,0 +1,31 @@
+[[32minfo[39m] order: 8/6/2023, 8:12:44 PM  Sucessfully fetched all orders
+[[32minfo[39m] order: 8/6/2023, 8:33:41 PM  Sucessfully fetched order for tracking, order ID  : 78d78579-1679-4571-865e-2f8b7b414b5c
+[[32minfo[39m] order: 8/6/2023, 8:55:49 PM  Sucessfully fetched all orders
+[[31merror[39m] order: 8/6/2023, 8:59:58 PM  Error: No Order Found for ID: undefined
+    at Object.read_order_from_id (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/repository/orderRepository.js:413:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_order_by_id (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/service/orderService.js:88:19)
+    at async read_order_by_id (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/api/orderApi.js:66:17)
+[[32minfo[39m] order: 8/6/2023, 9:00:22 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:07:21 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[31merror[39m] order: 8/6/2023, 9:07:30 PM  Error: No Order Found for ID: b9000d48-5dc1-47c8a8-f82ab82d5ec5
+    at Object.read_order_from_id (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/repository/orderRepository.js:413:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.read_order_by_id (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/service/orderService.js:88:19)
+    at async read_order_by_id (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/api/orderApi.js:66:17)
+[[32minfo[39m] order: 8/6/2023, 9:07:48 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:08:46 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:08:48 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:08:49 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:08:49 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:09:00 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:09:01 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:09:02 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:09:02 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:09:03 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:11:05 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:11:58 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:33:11 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
+[[32minfo[39m] order: 8/6/2023, 9:37:17 PM  Sucessfully fetched orders for ID:  b9000d48-5dc1-47cb-88a8-f82ab82d5ec5
