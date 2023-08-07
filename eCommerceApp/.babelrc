@@ -1,4 +1,9 @@
 {
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  },
   "plugins": [
     [
       "module-resolver",
@@ -11,6 +16,7 @@
           "navigation": "./src/navigation",
           "store": "./src/store",
           "icons": "./src/assets/icons",
+          "images": "./src/assets/images",
           "api": "./src/api",
           "common": "./src/common"
         }

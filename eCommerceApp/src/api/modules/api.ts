@@ -18,21 +18,32 @@ async function apiCall<T>(params: ApiParams): Promise<T> {
   );
 
   try {
-    const response = await fetch(url.toString(), {
+    const fetchOptions: RequestInit = {
       method: endpoint.method || 'GET',
       headers: {
         ...headers,
         'Content-Type': 'application/json',
       },
-      body: data ? JSON.stringify(data) : undefined,
-    });
+    };
+
+    // Only include the 'body' property if the request method is not 'GET' or 'HEAD'
+    if (endpoint.method && ['GET', 'HEAD'].indexOf(endpoint.method) === -1) {
+      fetchOptions.body = data ? JSON.stringify(data) : undefined;
+    }
+
+    const response = await fetch(url.toString(), fetchOptions);
 
     if (!response.ok) {
       throw new Error(await response.text());
     }
-
-    const responseData: T = await response.json();
-    return responseData;
+    const contentType = response.headers.get('content-type');
+    if (contentType?.startsWith('application/json')) {
+      const responseData: T = await response.json();
+      return responseData;
+    } else {
+      // Handle non-JSON responses (e.g., plain text or HTML)
+      return (await response.text()) as T;
+    }
   } catch (error) {
     throw error;
   }

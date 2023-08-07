@@ -1,0 +1,14 @@
+[
+  {
+    "id": "e3664909-6291-46a4-bae8-d264a001418c",
+    "userId": "947d2b87-2691-4d12-bc3b-d1b9b17e2f81",
+    "products": [
+      {
+        "productId": "0e572324-0c19-45dd-b55c-859adc7f5be1",
+        "quantity": 5
+      }
+    ],
+    "totalBill": 25000,
+    "status": "deactive"
+  }
+]
