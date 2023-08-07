@@ -29,6 +29,17 @@ $$;
 
 COMMIT;
 
+-- Create reviews_id_seq
+DO
+$$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_class WHERE relname = 'reviews_id_seq') THEN
+        CREATE SEQUENCE reviews_id_seq;
+    END IF;
+END
+$$;
+
+
 -- Table: public.users
 -- DROP TABLE IF EXISTS public.users;
 BEGIN;
