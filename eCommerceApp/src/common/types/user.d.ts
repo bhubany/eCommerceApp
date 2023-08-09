@@ -26,8 +26,12 @@ export type UserResponse = {
 
 export interface Address {
   country: string;
-  district: string;
+  province: string;
+  district?: string;
   city: string;
+  ward: string;
+  tole: string;
+  houseNo: string;
 }
 
 export interface UserLoginValue {
