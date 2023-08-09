@@ -7,6 +7,7 @@ import Profile from 'screens/profile';
 import SearchProducts from 'screens/search-product';
 import SignIn from 'screens/signin';
 import SignUp from 'screens/signup';
+import TrackOrder from 'screens/track-order';
 import CustomMenuItem from './../componennts/navigation';
 
 const Drawer = createDrawerNavigator();
@@ -44,7 +45,7 @@ const PublicNavigation = () => {
       />
       <Drawer.Screen
         name="trackOrder"
-        component={SignIn}
+        component={TrackOrder}
         options={{
           lazy: true,
           title: 'Track My Order',
@@ -67,7 +68,6 @@ const PublicNavigation = () => {
 export const PublicStackNavigation = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="homeS" component={SearchProducts} />
       <Stack.Screen name="homeScreen" component={Home} />
       <Stack.Screen name="signin" component={SignIn} />
       <Stack.Screen name="signup" component={SignUp} />

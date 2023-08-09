@@ -37,7 +37,11 @@ const SearchProducts = () => {
     <Layout>
       <SearchProductContainer>
         <SearchProductFormWrapper>
-          <InputWrapper value={keyword} onChangeText={inp => setKeyword(inp)} />
+          <InputWrapper
+            value={keyword}
+            placeholder="Enter keyword"
+            onChangeText={inp => setKeyword(inp)}
+          />
           <MyButton
             icon={<SearchIcon />}
             title="Search"
