@@ -1,6 +1,7 @@
 import {ProductType} from 'common/types';
 import {ImageList} from 'componennts/Carousel/carousel';
 export * from './order';
+export * from './product';
 
 export const carouselImages: ImageList[] = [
   {id: 1, url: '/images/banner/img0.png'},

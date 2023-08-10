@@ -1,16 +1,18 @@
 import React from 'react';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import {ButtonProps} from './button';
 import {
   ButtonContainer,
   ButtonIconWrapper,
   ButtonTextWrapper,
   ButtonWrapper,
 } from './buttonStyle';
-import {ButtonProps} from './button';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function MyButton(props: ButtonProps) {
   return (
     <TouchableOpacity
+      style={{opacity: props.disabled ? 0.5 : 1}}
+      disabled={props.disabled ?? false}
       onPress={() => (props.handleClick ? props.handleClick() : null)}>
       <ButtonContainer>
         <ButtonWrapper {...props}>

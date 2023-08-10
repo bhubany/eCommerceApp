@@ -1,14 +1,14 @@
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {carouselImages} from 'common/datas';
-import {COLORS, STATUS} from 'common/enums';
+import {STATUS} from 'common/enums';
 import {ProductType} from 'common/types';
-import {infoToast} from 'common/utils';
 import Layout from 'layout';
 import React, {useEffect, useRef, useState} from 'react';
 import {ScrollView, Text, View} from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MyButton from '../../componennts/Buttons';
 import ProductCard from '../../componennts/Cards/Product';
 import Carousel from '../../componennts/Carousel';
+import {DownloadIcon} from '../../componennts/Icons';
 import Loader from '../../componennts/Loader';
 import {useFetchLimitedProducts} from '../../hooks';
 import {
@@ -19,11 +19,17 @@ import {
   ProductCardWrapper,
 } from './homeStyle';
 
-const DownloadIcon = ({color = '#1976d2', size = 16}) => (
-  <MaterialIcons name="cloud-download" color={color} size={size} />
-);
+export type ProductDetailParams = {
+  productId: string | undefined;
+};
 
-export default function Home() {
+export type HomeProps = {
+  [productDetail: string | undefined];
+  params: ProductDetailParams;
+};
+type Props = NativeStackScreenProps<HomeProps>;
+
+export default function Home({navigation, route}: Props) {
   const [products, setProducts] = useState<ProductType[]>([]);
   const [loadingMoreProducts, setLoadingMoreProducts] =
     useState<boolean>(false);
@@ -41,9 +47,9 @@ export default function Home() {
     limit: perPageLimit,
   });
 
-  //TODO: Navoigate to product detail page on click
   const handleProductDetail = (id: string) => {
-    infoToast(`Clicked for ID: ${id}`);
+    navigation.navigate('productDetail', {productId: id});
+    navigation.canGoBack();
   };
 
   useEffect(() => {
@@ -117,7 +123,7 @@ export default function Home() {
                 <LoadMoreBtnContainer>
                   <MyButton
                     title="Load More"
-                    icon={<DownloadIcon color={COLORS.WHITE} />}
+                    icon={DownloadIcon}
                     width="140px"
                     handleClick={() => handleLoadMore()}
                   />
