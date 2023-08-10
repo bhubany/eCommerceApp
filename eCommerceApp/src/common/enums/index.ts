@@ -12,6 +12,7 @@ export enum COLORS {
   CORAL = '#fc7651',
   WHITE = '#ffffff',
   GREY = '#808080',
+  LIGHT_GREY = '#D2D2D3',
   BLACK = '#000000',
   ERROR = '#cc0000',
   RED = '#ff0000',
@@ -70,4 +71,9 @@ export enum ORDER_STATUS {
   DELIVERED = 'delivered',
   CANCELLED = 'cancelled',
   COMPLETED = 'completed',
+}
+
+export enum QUANTITY {
+  INCREASE = 'increase',
+  DECREASE = 'decrease',
 }

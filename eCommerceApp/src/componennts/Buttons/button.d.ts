@@ -10,4 +10,5 @@ export interface ButtonProps {
   handleClick?(): any;
   title: string;
   icon?: ReactNode;
+  disabled?: boolean;
 }

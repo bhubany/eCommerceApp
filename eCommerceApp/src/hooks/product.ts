@@ -142,3 +142,45 @@ export const useSearchProducts = (): SearchProductResponse => {
 
   return {...data, fetch: fetchData};
 };
+
+interface FetchProductResponse extends FetchApiDataType<ProductType> {
+  fetch: (keyword: string) => void;
+}
+
+export const useFetchProductByID = (): FetchProductResponse => {
+  const [data, setData] = useState<FetchApiDataType<ProductType>>({
+    data: {} as ProductType,
+    status: STATUS.PENDING,
+    message: null,
+  });
+
+  const fetchData = useCallback((id: string) => {
+    setData(prev => ({
+      ...prev,
+      status: STATUS.LOADING,
+    }));
+
+    const params: ApiParams = {
+      endpoint: product.one,
+      path: {productId: id},
+    };
+
+    apiCall<ProductType>(params)
+      .then(resp => {
+        setData(prevData => ({
+          ...prevData,
+          data: resp,
+          status: STATUS.SUCCESS,
+        }));
+      })
+      .catch(error => {
+        setData(prevData => ({
+          ...prevData,
+          message: error.message.toString(),
+          status: STATUS.FAILED,
+        }));
+      });
+  }, []);
+
+  return {...data, fetch: fetchData};
+};

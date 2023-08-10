@@ -3,15 +3,17 @@ import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Home from 'screens/home';
+import ProductDetail from 'screens/product-detail';
 import Profile from 'screens/profile';
 import SearchProducts from 'screens/search-product';
 import SignIn from 'screens/signin';
 import SignUp from 'screens/signup';
 import TrackOrder from 'screens/track-order';
 import CustomMenuItem from './../componennts/navigation';
+import {StackParamList} from './navigation';
 
 const Drawer = createDrawerNavigator();
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<StackParamList>();
 const HomeIcon = ({color = '', size = 24}) => (
   <MaterialIcons name="home" color={color} size={size} />
 );
@@ -72,6 +74,7 @@ export const PublicStackNavigation = () => {
       <Stack.Screen name="signin" component={SignIn} />
       <Stack.Screen name="signup" component={SignUp} />
       <Stack.Screen name="profile" component={Profile} />
+      <Stack.Screen name="productDetail" component={ProductDetail} />
     </Stack.Navigator>
   );
 };
