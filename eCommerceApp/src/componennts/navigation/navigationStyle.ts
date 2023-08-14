@@ -1,9 +1,10 @@
+import {COLORS} from 'common/enums';
 import {
+  Image,
+  ImageBackground,
+  Text,
   TouchableOpacity,
   View,
-  ImageBackground,
-  Image,
-  Text,
 } from 'react-native';
 import styled from 'styled-components';
 
@@ -26,8 +27,8 @@ export const UserImageWrapper = styled(Image)`
 `;
 
 export const UserNameWrapper = styled(Text)`
-  color: orange;
-  font-size: 20px;
+  color: ${COLORS.WHITE};
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;

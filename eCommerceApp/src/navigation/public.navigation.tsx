@@ -2,15 +2,19 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Cart from 'screens/cart';
 import Home from 'screens/home';
+import ProductDetail from 'screens/product-detail';
 import Profile from 'screens/profile';
 import SearchProducts from 'screens/search-product';
 import SignIn from 'screens/signin';
 import SignUp from 'screens/signup';
+import TrackOrder from 'screens/track-order';
 import CustomMenuItem from './../componennts/navigation';
+import {StackParamList} from './navigation';
 
 const Drawer = createDrawerNavigator();
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<StackParamList>();
 const HomeIcon = ({color = '', size = 24}) => (
   <MaterialIcons name="home" color={color} size={size} />
 );
@@ -20,6 +24,10 @@ const TrackOrderIcon = ({color = '', size = 24}) => (
 
 const SearchIcon = ({color = '', size = 24}) => (
   <MaterialIcons name="search" color={color} size={size} />
+);
+
+const CartIcon = ({color = '', size = 24}) => (
+  <MaterialIcons name="shopping-cart" color={color} size={size} />
 );
 
 const PublicNavigation = () => {
@@ -44,7 +52,7 @@ const PublicNavigation = () => {
       />
       <Drawer.Screen
         name="trackOrder"
-        component={SignIn}
+        component={TrackOrder}
         options={{
           lazy: true,
           title: 'Track My Order',
@@ -60,6 +68,15 @@ const PublicNavigation = () => {
           drawerIcon: SearchIcon,
         }}
       />
+      <Drawer.Screen
+        name="cart"
+        component={Cart} //TODO: move to private navigation
+        options={{
+          lazy: true,
+          title: 'My Cart',
+          drawerIcon: CartIcon,
+        }}
+      />
     </Drawer.Navigator>
   );
 };
@@ -67,11 +84,11 @@ const PublicNavigation = () => {
 export const PublicStackNavigation = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="homeS" component={SearchProducts} />
       <Stack.Screen name="homeScreen" component={Home} />
       <Stack.Screen name="signin" component={SignIn} />
       <Stack.Screen name="signup" component={SignUp} />
       <Stack.Screen name="profile" component={Profile} />
+      <Stack.Screen name="productDetail" component={ProductDetail} />
     </Stack.Navigator>
   );
 };

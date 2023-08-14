@@ -1,14 +1,12 @@
 import {STATUS} from 'common/enums';
 
-export interface UserDetails
-  extends Omit<Omit<UserResponse, 'id'>, 'password'> {
-  userId: string;
+export interface UserDetails extends Omit<UserResponse, 'password'> {
   isLogined: boolean;
   status: STATUS;
 }
 
 export type UserResponse = {
-  id: string;
+  id?: string;
   firstname: string;
   middlename: string;
   lastname: string;
@@ -26,8 +24,12 @@ export type UserResponse = {
 
 export interface Address {
   country: string;
-  district: string;
+  province: string;
+  district?: string;
   city: string;
+  ward: string;
+  tole: string;
+  houseNo: string;
 }
 
 export interface UserLoginValue {
