@@ -78,10 +78,10 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
         {...props}
         contentContainerStyle={{backgroundColor: 'orange'}}>
         <MenueBgImageWrapper
-          source={require('../../assets/images/download.png')}>
+          source={require('../../assets/images/bg-cart-orange.jpg')}>
           <UserImageWrapper
             source={
-              login && login.isLogined
+              login && login.isLogined && login.imageurl
                 ? login.imageurl
                 : require('../../assets/images/User-Profile.png')
             }

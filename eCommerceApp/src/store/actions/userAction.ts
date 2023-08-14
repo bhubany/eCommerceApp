@@ -22,7 +22,7 @@ export const userLogin = createAsyncThunk<
     };
     return await apiCall<UserResponse>(params);
   } catch (error: Error | unknown) {
-    throw <ApiError>(error as Error).message;
+    throw <ApiError>(<unknown>(error as Error).message);
   }
 });
 
@@ -37,6 +37,6 @@ export const userRegister = createAsyncThunk<
     };
     return await apiCall<RegisterResponse>(params);
   } catch (error: Error | unknown) {
-    throw <ApiError>(error as Error).message;
+    throw <ApiError>(<unknown>(error as Error).message);
   }
 });

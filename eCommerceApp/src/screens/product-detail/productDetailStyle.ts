@@ -1,5 +1,5 @@
 import {COLORS} from 'common/enums';
-import {TextInput, View} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import styled from 'styled-components';
 
@@ -92,4 +92,17 @@ export const LoaderWrapper = styled(View)`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const MyCartWrapper = styled(View)``;
+
+export const MyCartLabelWrapper = styled(Text)`
+  position: absolute;
+  background-color: ${COLORS.WHITE};
+  color: ${COLORS.PRIMARY};
+  font-weight: 800;
+  padding: 3px;
+  border-radius: 40px;
+  top: -4px;
+  right: -3px;
 `;

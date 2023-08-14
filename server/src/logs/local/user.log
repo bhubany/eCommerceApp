@@ -1,0 +1,27 @@
+[[31merror[39m] user: 8/14/2023, 8:18:36 PM  Error: Invalid login Credintals
+    at Object.find_user_from_credintals (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/repository/userRepository.js:192:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.user_signin (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/service/userService.js:181:22)
+    at async user_login (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/api/userApi.js:86:17)
+[[31merror[39m] user: 8/14/2023, 8:18:58 PM  Error: Invalid login Credintals
+    at Object.find_user_from_credintals (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/repository/userRepository.js:192:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.user_signin (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/service/userService.js:181:22)
+    at async user_login (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/api/userApi.js:86:17)
+[[31merror[39m] user: 8/14/2023, 8:19:33 PM  Error: Invalid login Credintals
+    at Object.find_user_from_credintals (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/repository/userRepository.js:192:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.user_signin (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/service/userService.js:181:22)
+    at async user_login (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/api/userApi.js:86:17)
+[[31merror[39m] user: 8/14/2023, 8:19:55 PM  Error: Invalid login Credintals
+    at Object.find_user_from_credintals (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/repository/userRepository.js:192:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.user_signin (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/service/userService.js:181:22)
+    at async user_login (/media/bhuban/72E2928AE29251E91/prithak_creation/Projects/learning/E-commerce-App/eCommerceApp/server/src/api/userApi.js:86:17)
+[[32minfo[39m] user: 8/14/2023, 8:20:48 PM  User: yadav.bhuban.by@gmail.com login Sucessfully
+[[32minfo[39m] user: 8/14/2023, 8:30:27 PM  User: yadav.bhuban.by@gmail.com login Sucessfully
+[[32minfo[39m] user: 8/14/2023, 8:39:19 PM  User: yadav.bhuban.by@gmail.com login Sucessfully

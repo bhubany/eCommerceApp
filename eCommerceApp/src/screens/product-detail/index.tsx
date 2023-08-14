@@ -1,10 +1,12 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 
+import {AnyAction, ThunkDispatch} from '@reduxjs/toolkit';
 import {COLORS, QUANTITY, STATUS} from 'common/enums';
 import {
   CART_QTY_CANNOT_BE_LESS_THAN_ONE,
   INVALID_QUANTITY,
+  LOGIN_FIRST,
   OUT_OF_STOCK,
   QUANTITY_CANNOT_BE_GREATER_THAN_AVAILABLE,
 } from 'common/messages/info.message';
@@ -13,14 +15,21 @@ import {
   AlignHorizontallySpaceBtn,
   TextContent,
 } from 'common/styles';
+import {AddToCartResp, CartDetails, UserDetails} from 'common/types';
 import {errorToast, infoToast, successToast} from 'common/utils';
 import React, {useEffect, useState} from 'react';
 import {Image, ScrollView, TouchableOpacity} from 'react-native';
 import Config from 'react-native-config';
+import {useDispatch, useSelector} from 'react-redux';
 import {ProductDetailParams} from 'screens/home';
+import {RootState} from 'store';
+import {addToCart, userCart} from 'store/actions/cartAction';
+import {cleanAddToCartStatus} from 'store/reducers/cartSlice';
+import {addToCartState, cartState, loginState} from 'store/selectors';
 import MyButton from '../../componennts/Buttons';
 import {
   AddIcon,
+  AddToCartIcon,
   InventoryIcon,
   NextIcon,
   PreviousIcon,
@@ -36,6 +45,8 @@ import {
   ImageContainer,
   ImageWrapper,
   LoaderWrapper,
+  MyCartLabelWrapper,
+  MyCartWrapper,
   NextBtnWrapper,
   PreviousBtnWrapper,
   ProductDetContainer,
@@ -58,11 +69,17 @@ type Props = {
 };
 
 const ProductDetail = (props: Props) => {
-  const {productId} = props.route.params as ProductDetailParams;
+  const {navigation, route} = props;
+  const {products}: CartDetails = useSelector(cartState);
+  const {id: userId, isLogined}: UserDetails = useSelector(loginState);
+  const addToCartResp: AddToCartResp = useSelector(addToCartState);
+  const dispatch: ThunkDispatch<RootState, unknown, AnyAction> = useDispatch();
+  const {productId} = route.params as ProductDetailParams;
   const {data: product, fetch, message, status} = useFetchProductByID();
   const [target, setTarget] = useState<number>(1);
   const [quantity, setQuantity] = useState<string>('1');
   let index = 0;
+
   const handleNext = () => {
     if (target < index) {
       setTarget(target + 1);
@@ -76,19 +93,34 @@ const ProductDetail = (props: Props) => {
   };
 
   const handleNavigateBack = () => {
-    props.navigation.goBack();
+    navigation.goBack();
   };
 
-  //TODO: implement add to cart functionality
   const handleAddToCart = () => {
-    successToast('Product ${name} added to cart Sucessfully');
+    if (!isLogined) {
+      infoToast(LOGIN_FIRST);
+      navigation.navigate('signin');
+    } else {
+      if (parseInt(quantity, 10) < 1) {
+        errorToast(`Invalid product quantity: ${quantity}`);
+      } else {
+        dispatch(
+          addToCart({
+            userId: userId as string,
+            quantity: parseInt(quantity, 10),
+            productId: productId as string,
+          }),
+        );
+      }
+    }
   };
 
-  //TODO: implement buy now functionality
   const handleBuyNow = () => {
-    handleAddToCart(); // TODO: then navigate to checkout page
-    infoToast('Buy now ');
+    handleAddToCart();
+    navigation.navigate('cart');
   };
+
+  const handleMyCart = () => navigation.navigate('cart');
 
   const handleQuantity = (action: QUANTITY, avQuantity: number) => {
     const qty = parseInt(quantity, 10);
@@ -119,8 +151,23 @@ const ProductDetail = (props: Props) => {
     if (productId) {
       fetch(productId);
     }
+
+    if (userId) {
+      dispatch(userCart({id: userId}));
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (addToCartResp.status === STATUS.SUCCESS) {
+      successToast(addToCartResp.message);
+      dispatch(cleanAddToCartStatus());
+      dispatch(userCart({id: userId as string}));
+    } else if (addToCartResp.status === STATUS.FAILED) {
+      errorToast(addToCartResp.message);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [addToCartResp, dispatch]);
 
   return (
     <ProductDetContainer>
@@ -250,9 +297,18 @@ const ProductDetail = (props: Props) => {
               handleClick={() => handleAddToCart()}
               width="120px"
               title="Add to Cart"
-              icon={ShoppingCartIcon}
+              icon={AddToCartIcon}
             />
-
+            <TouchableOpacity onPress={handleMyCart}>
+              {isLogined ? (
+                <MyCartWrapper>
+                  {ShoppingCartIcon}
+                  <MyCartLabelWrapper>
+                    {products.length || 'NA'}
+                  </MyCartLabelWrapper>
+                </MyCartWrapper>
+              ) : null}
+            </TouchableOpacity>
             <MyButton
               disabled={product.quantity < 1}
               handleClick={() => handleBuyNow()}
