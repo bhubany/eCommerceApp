@@ -1,17 +1,13 @@
-import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+import React from 'react';
 import Home from 'screens/home';
-import SignIn from 'screens/signin';
-import SignUp from 'screens/signup';
 
 const Drawer = createDrawerNavigator();
 
 const AdminNavigation = () => {
   return (
     <Drawer.Navigator screenOptions={{headerShown: false}}>
-      <Drawer.Screen name="homea" component={Home} />
-      <Drawer.Screen name="signina" component={SignIn} />
-      <Drawer.Screen name="signupa" component={SignUp} />
+      <Drawer.Screen name="dashboard" component={Home} />
     </Drawer.Navigator>
   );
 };

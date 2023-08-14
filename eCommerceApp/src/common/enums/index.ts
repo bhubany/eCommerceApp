@@ -77,3 +77,8 @@ export enum QUANTITY {
   INCREASE = 'increase',
   DECREASE = 'decrease',
 }
+
+export enum CART_STATUS {
+  ACTIVE = 'active',
+  DE_ACTIVE = 'deactive',
+}

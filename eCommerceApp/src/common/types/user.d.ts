@@ -1,14 +1,12 @@
 import {STATUS} from 'common/enums';
 
-export interface UserDetails
-  extends Omit<Omit<UserResponse, 'id'>, 'password'> {
-  userId: string;
+export interface UserDetails extends Omit<UserResponse, 'password'> {
   isLogined: boolean;
   status: STATUS;
 }
 
 export type UserResponse = {
-  id: string;
+  id?: string;
   firstname: string;
   middlename: string;
   lastname: string;

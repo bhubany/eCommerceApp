@@ -2,6 +2,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Cart from 'screens/cart';
 import Home from 'screens/home';
 import ProductDetail from 'screens/product-detail';
 import Profile from 'screens/profile';
@@ -23,6 +24,10 @@ const TrackOrderIcon = ({color = '', size = 24}) => (
 
 const SearchIcon = ({color = '', size = 24}) => (
   <MaterialIcons name="search" color={color} size={size} />
+);
+
+const CartIcon = ({color = '', size = 24}) => (
+  <MaterialIcons name="shopping-cart" color={color} size={size} />
 );
 
 const PublicNavigation = () => {
@@ -61,6 +66,15 @@ const PublicNavigation = () => {
           lazy: true,
           title: 'Search My Products',
           drawerIcon: SearchIcon,
+        }}
+      />
+      <Drawer.Screen
+        name="cart"
+        component={Cart} //TODO: move to private navigation
+        options={{
+          lazy: true,
+          title: 'My Cart',
+          drawerIcon: CartIcon,
         }}
       />
     </Drawer.Navigator>

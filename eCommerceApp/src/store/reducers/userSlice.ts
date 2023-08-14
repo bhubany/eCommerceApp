@@ -1,12 +1,12 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {createSlice, Reducer, AnyAction} from '@reduxjs/toolkit';
+import {AnyAction, Reducer, createSlice} from '@reduxjs/toolkit';
 import {STATUS} from 'common/enums';
 import {UNKNOWN_ERROR_OCCURED} from 'common/messages/error.message';
-import {UserDetails, RegisterDetails} from 'common/types';
+import {RegisterDetails, UserDetails} from 'common/types';
 import {userLogin, userRegister} from 'store/actions';
 
 const initialStateLogin: UserDetails = {
-  userId: '',
+  id: '',
   firstname: '',
   middlename: '',
   lastname: '',
@@ -84,12 +84,11 @@ const userSlice = createSlice({
         };
       })
       .addCase(userRegister.fulfilled, (state, action) => {
-        console.log(action);
         state.register = {
           ...state.register,
           status: STATUS.SUCCESS,
           isRegistered: true,
-          message: action.payload,
+          message: action.payload as unknown as string,
         };
       })
       .addCase(userRegister.rejected, (state, action) => {
