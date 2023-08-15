@@ -10,10 +10,10 @@ import React from 'react';
 import {View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Share, {ShareOptions} from 'react-native-share';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {useDispatch, useSelector} from 'react-redux';
 import {userLogout} from 'store/reducers/userSlice';
 import {loginState} from 'store/selectors';
+import {ShareIcon, SignOutIcon} from '../../componennts/Icons';
 import {
   CustomMenuContainer,
   DrawerFooterItemContent,
@@ -22,14 +22,9 @@ import {
   DrawerListWrapper,
   MenueBgImageWrapper,
   UserImageWrapper,
+  UserNameContainer,
   UserNameWrapper,
 } from './navigationStyle';
-const ShareIcon = ({color = '#1976d2', size = 16}) => (
-  <MaterialIcons name="share" color={color} size={size} />
-);
-const SignOutIcon = ({color = '#1976d2', size = 16}) => (
-  <MaterialIcons name="logout" color={color} size={size} />
-);
 
 const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
   const dispatch = useDispatch();
@@ -89,11 +84,11 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
               login && login.isLogined ? login.imagealttext : 'user profile pic'
             }
           />
-          <TouchableOpacity onPress={() => handleLoginOrProfile()}>
+          <UserNameContainer onPress={handleLoginOrProfile}>
             <UserNameWrapper>
               {login && login.isLogined ? `Hello ${login.firstname}` : 'signin'}
             </UserNameWrapper>
-          </TouchableOpacity>
+          </UserNameContainer>
         </MenueBgImageWrapper>
         <DrawerListWrapper>
           <DrawerItemList {...props} />
@@ -105,14 +100,14 @@ const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
       <DrawerFooterListWrapper>
         <TouchableOpacity onPress={() => handleTellAFriend()}>
           <DrawerFooterItemWrapper>
-            <ShareIcon />
+            {ShareIcon}
             <DrawerFooterItemContent>Tell a friend !</DrawerFooterItemContent>
           </DrawerFooterItemWrapper>
         </TouchableOpacity>
         {login && login.isLogined ? (
           <TouchableOpacity onPress={() => handleLogout()}>
             <DrawerFooterItemWrapper>
-              <SignOutIcon />
+              {SignOutIcon}
               <DrawerFooterItemContent>Sign Out</DrawerFooterItemContent>
             </DrawerFooterItemWrapper>
           </TouchableOpacity>

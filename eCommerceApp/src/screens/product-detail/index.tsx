@@ -21,7 +21,6 @@ import React, {useEffect, useState} from 'react';
 import {Image, ScrollView, TouchableOpacity} from 'react-native';
 import Config from 'react-native-config';
 import {useDispatch, useSelector} from 'react-redux';
-import {ProductDetailParams} from 'screens/home';
 import {RootState} from 'store';
 import {addToCart, userCart} from 'store/actions/cartAction';
 import {cleanAddToCartStatus} from 'store/reducers/cartSlice';
@@ -39,6 +38,7 @@ import {
 import Loader from '../../componennts/Loader';
 import NavHeader from '../../componennts/Nav-Header';
 import {useFetchProductByID} from '../../hooks';
+import {ProductDetailParams} from './productDetail';
 import {
   ContentWrapper,
   FooterWrapper,
@@ -93,7 +93,11 @@ const ProductDetail = (props: Props) => {
   };
 
   const handleNavigateBack = () => {
-    navigation.goBack();
+    if (route.params?.fromScreen) {
+      navigation.navigate(route.params.fromScreen);
+    } else {
+      navigation.goBack();
+    }
   };
 
   const handleAddToCart = () => {
