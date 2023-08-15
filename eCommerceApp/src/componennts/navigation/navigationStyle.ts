@@ -25,6 +25,10 @@ export const UserImageWrapper = styled(Image)`
   height: 80px;
   border-radius: 50px;
 `;
+export const UserNameContainer = styled(TouchableOpacity)`
+  padding: 0 !important;
+  margin: 0 !important;
+`;
 
 export const UserNameWrapper = styled(Text)`
   color: ${COLORS.WHITE};
