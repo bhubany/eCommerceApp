@@ -1,15 +1,85 @@
-import {useNavigation} from '@react-navigation/native';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {product} from 'common/datas';
+import {AlignHorizontallySpaceBtn, TextContent} from 'common/styles';
+import {CartDetails} from 'common/types';
+import {infoToast} from 'common/utils';
 import React from 'react';
-import {Text} from 'react-native';
+import {ScrollView} from 'react-native';
+import {useSelector} from 'react-redux';
+import {PlaceOrderProps} from 'screens/place-order/placeOrder';
+import {cartState} from 'store/selectors';
+import MyButton from '../../componennts/Buttons';
+import CartCard from '../../componennts/Cards/Cart-Card';
+import {CartCheckoutIcon} from '../../componennts/Icons';
 import NavHeader from '../../componennts/Nav-Header';
-import {CartContainer} from './cartStyle';
+import {
+  CartCardContainer,
+  CartCntntCntnr,
+  CartContainer,
+  CartDetlsWrpr,
+  FooterWrapper,
+} from './cartStyle';
 
-const Cart = () => {
-  const navigation = useNavigation();
+type NavigationProps = NativeStackScreenProps<
+  {placeOrder: PlaceOrderProps},
+  'placeOrder'
+>;
+
+const Cart: React.FC<NavigationProps> = ({navigation}) => {
+  const {totalBill, products}: CartDetails = useSelector(cartState);
+  const handleGoBack = () => {
+    navigation.goBack();
+  };
+
+  const handleCheckOut = () =>
+    navigation.navigate('placeOrder', {
+      fromScreen: 'cart',
+    });
+
+  const handleViewProduct = () => {
+    infoToast('Modal will be shown');
+  };
+
+  //TODO: modify get cart API to get product details also to match cart requirements
+
   return (
     <CartContainer>
-      <NavHeader title="My Cart" handleClick={() => navigation.goBack()} />
-      <Text>Cart</Text>
+      <NavHeader title="My Cart Details" handleClick={handleGoBack} />
+      <CartCntntCntnr>
+        <CartDetlsWrpr>
+          <AlignHorizontallySpaceBtn>
+            <TextContent fontSize="16px">Total Quantity: </TextContent>
+            <TextContent fontSize="16px">{products.length} </TextContent>
+          </AlignHorizontallySpaceBtn>
+          <AlignHorizontallySpaceBtn>
+            <TextContent fontSize="16px">Total Bill: </TextContent>
+            <TextContent fontSize="16px">{totalBill} </TextContent>
+          </AlignHorizontallySpaceBtn>
+        </CartDetlsWrpr>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <CartCardContainer>
+            {products &&
+              products.length &&
+              products.map(prdt => (
+                <CartCard
+                  key={prdt.productId}
+                  product={product}
+                  onClick={() => handleViewProduct()}
+                />
+              ))}
+          </CartCardContainer>
+        </ScrollView>
+      </CartCntntCntnr>
+      <FooterWrapper>
+        <MyButton
+          width="350px"
+          height="40px"
+          icon={CartCheckoutIcon}
+          title="Checkout"
+          fontSize="24px"
+          handleClick={handleCheckOut}
+        />
+      </FooterWrapper>
     </CartContainer>
   );
 };
