@@ -35,3 +35,4 @@ export const TrackOrderIcon = getMuiIcons('local-shipping', COLORS.PRIMARY, 24);
 export const SearchIcon24 = getMuiIcons('search', COLORS.PRIMARY, 24);
 export const ShareIcon = getMuiIcons('share', COLORS.PRIMARY, 16);
 export const SignOutIcon = getMuiIcons('logout', COLORS.PRIMARY, 16);
+export const CartCheckoutIcon = getMuiIcons('shopping-cart', COLORS.WHITE, 30);

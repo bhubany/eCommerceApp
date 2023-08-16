@@ -4,6 +4,7 @@ import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Cart from 'screens/cart';
 import Home from 'screens/home';
+import PlaceOrder from 'screens/place-order';
 import ProductDetail from 'screens/product-detail';
 import Profile from 'screens/profile';
 import SearchProducts from 'screens/search-product';
@@ -103,6 +104,7 @@ export const PublicStackNavigation = () => {
       <Stack.Screen name="signup" component={SignUp} />
       <Stack.Screen name="profile" component={Profile} />
       <Stack.Screen name="productDetail" component={ProductDetail} />
+      <Stack.Screen name="placeOrder" component={PlaceOrder} />
     </Stack.Navigator>
   );
 };
