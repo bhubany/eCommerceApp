@@ -2,8 +2,7 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {product} from 'common/datas';
 import {AlignHorizontallySpaceBtn, TextContent} from 'common/styles';
 import {CartDetails} from 'common/types';
-import {infoToast} from 'common/utils';
-import React from 'react';
+import React, {useState} from 'react';
 import {ScrollView} from 'react-native';
 import {useSelector} from 'react-redux';
 import {PlaceOrderProps} from 'screens/place-order/placeOrder';
@@ -11,6 +10,7 @@ import {cartState} from 'store/selectors';
 import MyButton from '../../componennts/Buttons';
 import CartCard from '../../componennts/Cards/Cart-Card';
 import {CartCheckoutIcon} from '../../componennts/Icons';
+import Modal from '../../componennts/Modal';
 import NavHeader from '../../componennts/Nav-Header';
 import {
   CartCardContainer,
@@ -26,6 +26,7 @@ type NavigationProps = NativeStackScreenProps<
 >;
 
 const Cart: React.FC<NavigationProps> = ({navigation}) => {
+  const [open, setOpen] = useState<boolean>(false);
   const {totalBill, products}: CartDetails = useSelector(cartState);
   const handleGoBack = () => {
     navigation.goBack();
@@ -37,7 +38,7 @@ const Cart: React.FC<NavigationProps> = ({navigation}) => {
     });
 
   const handleViewProduct = () => {
-    infoToast('Modal will be shown');
+    setOpen(true);
   };
 
   //TODO: modify get cart API to get product details also to match cart requirements
@@ -80,6 +81,7 @@ const Cart: React.FC<NavigationProps> = ({navigation}) => {
           handleClick={handleCheckOut}
         />
       </FooterWrapper>
+      {open && <Modal setOpen={setOpen} />}
     </CartContainer>
   );
 };
