@@ -1,31 +1,31 @@
-import React, {useEffect, useState} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
-import {loginState} from 'store/selectors';
-import {userLogin} from 'store/actions';
-import {AnyAction} from 'redux';
-import {UserDetails, UserLoginValue} from 'common/types';
+import {DrawerContentComponentProps} from '@react-navigation/drawer';
 import {ThunkDispatch} from '@reduxjs/toolkit';
+import {COLORS, STATUS} from 'common/enums';
+import {UserDetails, UserLoginValue} from 'common/types';
+import {errorToast, infoToast, successToast} from 'common/utils';
+import {signInSchema} from 'common/validation/userValidation';
+import {ErrorMessage, Formik, FormikHelpers} from 'formik';
+import Layout from 'layout';
+import React, {useEffect, useState} from 'react';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import {useDispatch, useSelector} from 'react-redux';
+import {AnyAction} from 'redux';
 import {RootState} from 'store';
+import {userLogin} from 'store/actions';
+import {cleanUserStatus} from 'store/reducers/userSlice';
+import {loginState} from 'store/selectors';
+import MyButton from '../../componennts/Buttons';
 import {
+  ButtonWrapper,
+  ErrorText,
+  FooterText,
+  FooterTextWrapper,
+  InputContainer,
+  InputWrapper,
+  LabelTextWrapper,
   SigninContainer,
   SigninWrapper,
-  InputWrapper,
-  ErrorText,
-  InputContainer,
-  LabelTextWrapper,
-  ButtonWrapper,
-  FooterTextWrapper,
-  FooterText,
 } from './signinStyle';
-import Layout from 'layout';
-import MyButton from '../../componennts/Buttons';
-import {Formik, FormikHelpers} from 'formik';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {DrawerContentComponentProps} from '@react-navigation/drawer';
-import {COLORS, STATUS} from 'common/enums';
-import {signInSchema} from 'common/validation/userValidation';
-import {errorToast, infoToast, successToast} from 'common/utils';
-import {cleanUserStatus} from 'store/reducers/userSlice';
 
 const SignIn: React.FC<DrawerContentComponentProps> = props => {
   const {navigation} = props;
@@ -89,7 +89,9 @@ const SignIn: React.FC<DrawerContentComponentProps> = props => {
                   placeholder="user@infinityshop.com"
                 />
               </InputContainer>
-              {errors.email && <ErrorText>{errors.email}</ErrorText>}
+              <ErrorMessage name="email">
+                {message => <ErrorText>{message}</ErrorText>}
+              </ErrorMessage>
 
               <InputContainer>
                 <LabelTextWrapper>Password:</LabelTextWrapper>
@@ -100,8 +102,11 @@ const SignIn: React.FC<DrawerContentComponentProps> = props => {
                   placeholder="Enter Your Password"
                   secureTextEntry
                 />
-                {errors.password && <ErrorText>{errors.password}</ErrorText>}
+                <ErrorMessage name="password">
+                  {message => <ErrorText>{message}</ErrorText>}
+                </ErrorMessage>
               </InputContainer>
+
               <InputContainer>
                 <ButtonWrapper errors={errors}>
                   <MyButton
