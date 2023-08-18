@@ -22,9 +22,9 @@ const localLogger = (filename) => {
     ),
     transports: [
       new transports.Console(),
-      process.env.LOGGER
-        ? new transports.File({ filename: `./src/logs/local/${filename}.log` })
-        : null,
+      // process.env.LOGGER
+      //   ? new transports.File({ filename: `./src/logs/local/${filename}.log` })
+      //   : null,
     ],
   });
 };
