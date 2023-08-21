@@ -39,4 +39,7 @@ export const ButtonTextWrapper = styled(Text)<ButtonProps>`
       : !props.outlined
       ? COLORS.WHITE
       : COLORS.PRIMARY};
+  font-size: ${props => (props.fontSize ? props.fontSize : '14px')};
+  line-height: ${props => (props.lineHeight ? props.lineHeight : '24px')};
+  font-weight: ${props => (props.fontWeight ? props.fontWeight : '600')};
 `;

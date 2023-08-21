@@ -1,10 +1,11 @@
-import {COLORS, STATUS} from 'common/enums';
-import {infoToast} from 'common/utils';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {STATUS} from 'common/enums';
 import Layout from 'layout';
 import React, {useState} from 'react';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {ProductDetailParams} from 'screens/product-detail/productDetail';
 import MyButton from '../../componennts/Buttons';
 import ProductCard from '../../componennts/Cards/Product';
+import {SearchIcon} from '../../componennts/Icons';
 import Loader from '../../componennts/Loader';
 import {useSearchProducts} from '../../hooks';
 import {
@@ -17,11 +18,13 @@ import {
   SearchProductFormWrapper,
 } from './searchProductStyle';
 
-const SearchIcon = () => (
-  <MaterialIcons name="search" color={COLORS.WHITE} size={20} />
-);
+type ParamList = {
+  productDetail: ProductDetailParams;
+};
 
-const SearchProducts = () => {
+type Props = NativeStackScreenProps<ParamList, 'productDetail'>;
+
+const SearchProducts: React.FC<Props> = ({navigation}) => {
   const [keyword, setKeyword] = useState<string>('');
   const {data, message, status, fetch} = useSearchProducts();
   const handleSearch = () => {
@@ -29,10 +32,14 @@ const SearchProducts = () => {
       fetch(keyword);
     }
   };
-  //TODO: Navoigate to product detail page on click
+
   const handleViewProduct = (id: string) => {
-    infoToast('Product View for Id', id);
+    navigation.navigate('productDetail', {
+      productId: id,
+      fromScreen: 'searchProducts',
+    });
   };
+
   return (
     <Layout>
       <SearchProductContainer>
@@ -43,7 +50,7 @@ const SearchProducts = () => {
             onChangeText={inp => setKeyword(inp)}
           />
           <MyButton
-            icon={<SearchIcon />}
+            icon={SearchIcon}
             title="Search"
             height="34px"
             handleClick={handleSearch}

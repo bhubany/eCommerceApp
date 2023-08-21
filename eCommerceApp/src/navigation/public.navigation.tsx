@@ -4,6 +4,7 @@ import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Cart from 'screens/cart';
 import Home from 'screens/home';
+import PlaceOrder from 'screens/place-order';
 import ProductDetail from 'screens/product-detail';
 import Profile from 'screens/profile';
 import SearchProducts from 'screens/search-product';
@@ -28,6 +29,10 @@ const SearchIcon = ({color = '', size = 24}) => (
 
 const CartIcon = ({color = '', size = 24}) => (
   <MaterialIcons name="shopping-cart" color={color} size={size} />
+);
+
+const ProfileIcon = ({color = '', size = 24}) => (
+  <MaterialIcons name="person" color={color} size={size} />
 );
 
 const PublicNavigation = () => {
@@ -55,7 +60,7 @@ const PublicNavigation = () => {
         component={TrackOrder}
         options={{
           lazy: true,
-          title: 'Track My Order',
+          title: 'Track Order',
           drawerIcon: TrackOrderIcon,
         }}
       />
@@ -64,7 +69,7 @@ const PublicNavigation = () => {
         component={SearchProducts}
         options={{
           lazy: true,
-          title: 'Search My Products',
+          title: 'Search Products',
           drawerIcon: SearchIcon,
         }}
       />
@@ -75,6 +80,16 @@ const PublicNavigation = () => {
           lazy: true,
           title: 'My Cart',
           drawerIcon: CartIcon,
+        }}
+      />
+
+      <Drawer.Screen
+        name="profile"
+        component={Profile} //TODO: move to private navigation
+        options={{
+          lazy: true,
+          title: 'My Profile',
+          drawerIcon: ProfileIcon,
         }}
       />
     </Drawer.Navigator>
@@ -89,6 +104,7 @@ export const PublicStackNavigation = () => {
       <Stack.Screen name="signup" component={SignUp} />
       <Stack.Screen name="profile" component={Profile} />
       <Stack.Screen name="productDetail" component={ProductDetail} />
+      <Stack.Screen name="placeOrder" component={PlaceOrder} />
     </Stack.Navigator>
   );
 };

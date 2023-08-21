@@ -5,6 +5,7 @@ import {ProductType} from 'common/types';
 import Layout from 'layout';
 import React, {useEffect, useRef, useState} from 'react';
 import {ScrollView, Text, View} from 'react-native';
+import {ProductDetailParams} from 'screens/product-detail/productDetail';
 import MyButton from '../../componennts/Buttons';
 import ProductCard from '../../componennts/Cards/Product';
 import Carousel from '../../componennts/Carousel';
@@ -19,17 +20,12 @@ import {
   ProductCardWrapper,
 } from './homeStyle';
 
-export type ProductDetailParams = {
-  productId: string | undefined;
-};
-
 export type HomeProps = {
-  [productDetail: string | undefined];
-  params: ProductDetailParams;
+  productDetail: ProductDetailParams;
 };
-type Props = NativeStackScreenProps<HomeProps>;
+type Props = NativeStackScreenProps<HomeProps, 'productDetail'>;
 
-export default function Home({navigation, route}: Props) {
+export default function Home({navigation}: Props) {
   const [products, setProducts] = useState<ProductType[]>([]);
   const [loadingMoreProducts, setLoadingMoreProducts] =
     useState<boolean>(false);
