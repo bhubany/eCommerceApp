@@ -84,3 +84,8 @@ export enum CART_STATUS {
   ACTIVE = 'active',
   DE_ACTIVE = 'deactive',
 }
+
+export enum CART_ACTION {
+  ADD = 'add',
+  REMOVE = 'remove',
+}
