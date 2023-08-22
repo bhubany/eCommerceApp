@@ -1,0 +1,4 @@
+[[32minfo[39m] user: 8/15/2023, 3:07:43 PM  User: yadav.bhuban.by@gmail.com login Sucessfully
+[[32minfo[39m] user: 8/17/2023, 12:07:52 PM  User: yadav.bhuban.by@gmail.com login Sucessfully
+[[31merror[39m] user: 8/18/2023, 10:41:19 PM  ValidationError: "email" must be a valid email
+[[31merror[39m] user: 8/18/2023, 10:43:05 PM  ValidationError: "email" must be a valid email
