@@ -13,7 +13,7 @@ import Share, {ShareOptions} from 'react-native-share';
 import {useDispatch, useSelector} from 'react-redux';
 import {userLogout} from 'store/reducers/userSlice';
 import {loginState} from 'store/selectors';
-import {ShareIcon, SignOutIcon} from '../../componennts/Icons';
+import {ShareIcon, SignOutIcon} from '../Icons';
 import {
   CustomMenuContainer,
   DrawerFooterItemContent,
@@ -24,7 +24,7 @@ import {
   UserImageWrapper,
   UserNameContainer,
   UserNameWrapper,
-} from './navigationStyle';
+} from './customMenueItemStyle';
 
 const CustomMenuItem: React.FC<DrawerContentComponentProps> = props => {
   const dispatch = useDispatch();

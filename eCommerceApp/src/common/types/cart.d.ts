@@ -1,4 +1,4 @@
-import {CART_STATUS, STATUS} from 'common/enums';
+import {CART_ACTION, CART_STATUS, STATUS} from 'common/enums';
 
 export interface CartProduct {
   productId: string;
@@ -26,6 +26,18 @@ export interface AddToCartCart {
   userId: string;
   productId: string;
   quantity: number;
+}
+
+export interface RemoveFromCart {
+  userId: string;
+  productId: string;
+}
+
+export interface UpdateProductQuantity {
+  userId: string;
+  productId: string;
+  quantity: number;
+  action: CART_ACTION;
 }
 
 export interface CartMessageResponse {

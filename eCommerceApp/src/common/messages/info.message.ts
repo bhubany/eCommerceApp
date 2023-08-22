@@ -5,3 +5,4 @@ export const CART_QTY_CANNOT_BE_LESS_THAN_ONE = `Cart quantity cannot be less th
 export const INVALID_QUANTITY = `Invalid Quantity`;
 export const OUT_OF_STOCK = `Out of Stock`;
 export const LOGIN_FIRST = `Try login first`;
+export const QUANTITY_UPDATED_IN_CART = `Quantity updated successfully`;
