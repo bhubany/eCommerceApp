@@ -4,4 +4,5 @@ export type StackParamList = {
   signin: undefined;
   signup: undefined;
   productDetail: undefined;
+  cart: undefined;
 };

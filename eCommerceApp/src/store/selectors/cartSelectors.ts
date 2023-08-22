@@ -6,9 +6,9 @@ export const cartState = (state: RootState & {cart: CartReducerStateType}) =>
 export const addToCartState = (
   state: RootState & {cart: CartReducerStateType},
 ) => state.cart.addTo;
-export const cartProductsState = (
+export const updateQuantityState = (
   state: RootState & {cart: CartReducerStateType},
-) => state.cart.get;
+) => state.cart.update;
 export const removeFromCartState = (
   state: RootState & {cart: CartReducerStateType},
-) => state.cart.get;
+) => state.cart.remove;

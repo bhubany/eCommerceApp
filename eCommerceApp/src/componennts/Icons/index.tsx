@@ -36,3 +36,6 @@ export const SearchIcon24 = getMuiIcons('search', COLORS.PRIMARY, 24);
 export const ShareIcon = getMuiIcons('share', COLORS.PRIMARY, 16);
 export const SignOutIcon = getMuiIcons('logout', COLORS.PRIMARY, 16);
 export const CartCheckoutIcon = getMuiIcons('shopping-cart', COLORS.WHITE, 30);
+export const ViewIcon = getMuiIcons('remove-red-eye', COLORS.INFO, 20);
+export const DeleteIcon = getMuiIcons('delete', COLORS.DANGER, 20);
+export const EditIcon = getMuiIcons('edit', COLORS.SUCCESS, 20);

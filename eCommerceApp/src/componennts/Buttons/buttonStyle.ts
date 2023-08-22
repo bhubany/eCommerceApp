@@ -1,10 +1,9 @@
 import {COLORS} from 'common/enums';
-import {Text, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import styled from 'styled-components';
 import {ButtonProps} from './button.d';
 
-export const ButtonContainer = styled(View)`
-  position: initial;
+export const ButtonContainer = styled(TouchableOpacity)<{opacity?: number}>`
   padding: 4px;
   gap: 8px;
 `;
@@ -19,7 +18,12 @@ export const ButtonWrapper = styled(View)<ButtonProps>`
       ? props.backgroundColor
       : COLORS.PRIMARY};
   border: solid
-    ${props => (props.borderColor ? props.borderColor : COLORS.PRIMARY)}
+    ${props =>
+      props.borderColor
+        ? props.borderColor
+        : props.backgroundColor
+        ? props.backgroundColor
+        : COLORS.PRIMARY}
     ${props => (props.borderWidth ? props.borderWidth : '2px')};
   border-radius: ${props => (props.borderRadius ? props.borderRadius : '6px')};
   color: ${props => (props.color ? props.color : COLORS.PRIMARY)};
