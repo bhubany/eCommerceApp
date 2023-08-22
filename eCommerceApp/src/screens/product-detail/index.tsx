@@ -159,16 +159,18 @@ const ProductDetail = (props: Props) => {
     if (userId) {
       dispatch(userCart({id: userId}));
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch, fetch, productId, userId]);
 
   useEffect(() => {
     if (addToCartResp.status === STATUS.SUCCESS) {
       successToast(addToCartResp.message);
-      dispatch(cleanAddToCartStatus());
       dispatch(userCart({id: userId as string}));
     } else if (addToCartResp.status === STATUS.FAILED) {
       errorToast(addToCartResp.message);
+    }
+
+    if (addToCartResp && addToCartResp.status !== STATUS.PENDING) {
+      dispatch(cleanAddToCartStatus());
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [addToCartResp, dispatch]);

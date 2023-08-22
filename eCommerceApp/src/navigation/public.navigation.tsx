@@ -11,7 +11,7 @@ import SearchProducts from 'screens/search-product';
 import SignIn from 'screens/signin';
 import SignUp from 'screens/signup';
 import TrackOrder from 'screens/track-order';
-import CustomMenuItem from './../componennts/navigation';
+import CustomMenuItem from './../componennts/Custom-Menue-Item';
 import {StackParamList} from './navigation';
 
 const Drawer = createDrawerNavigator();
