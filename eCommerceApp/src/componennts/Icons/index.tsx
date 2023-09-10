@@ -1,9 +1,18 @@
 import {COLORS} from 'common/enums';
 import {Image} from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const getMuiIcons = (name: string, color?: string, size?: number) => (
   <MaterialIcons name={name} color={color ?? COLORS.CORAL} size={size ?? 50} />
+);
+
+const getMuiCommunityIcons = (name: string, color?: string, size?: number) => (
+  <MaterialCommunityIcons
+    name={name}
+    color={color ?? COLORS.CORAL}
+    size={size ?? 50}
+  />
 );
 
 export const DeliveredIcon = (
@@ -39,3 +48,6 @@ export const CartCheckoutIcon = getMuiIcons('shopping-cart', COLORS.WHITE, 30);
 export const ViewIcon = getMuiIcons('remove-red-eye', COLORS.INFO, 20);
 export const DeleteIcon = getMuiIcons('delete', COLORS.DANGER, 20);
 export const EditIcon = getMuiIcons('edit', COLORS.SUCCESS, 20);
+export const PlaceOrderIcon = getMuiIcons('shopping-cart', COLORS.WHITE, 20);
+export const UpArrow = getMuiIcons('keyboard-arrow-up', COLORS.BLACK, 20);
+export const DownArrow = getMuiIcons('keyboard-arrow-down', COLORS.BLACK, 20);
