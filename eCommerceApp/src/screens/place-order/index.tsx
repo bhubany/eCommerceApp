@@ -1,8 +1,11 @@
 import {useNavigation} from '@react-navigation/native';
+import {countries} from 'common/datas';
 import {COLORS} from 'common/enums';
 import {TextContent} from 'common/styles';
 import {infoToast} from 'common/utils';
+import {Formik} from 'formik';
 import React from 'react';
+import * as Yup from 'yup';
 import MyButton from '../../componennts/Buttons';
 import {PlaceOrderIcon} from '../../componennts/Icons';
 import Select from '../../componennts/Inputs/Select';
@@ -20,6 +23,12 @@ const PlaceOrder: React.FC<PlaceOrderProps> = ({fromScreen}) => {
     infoToast('Order Placed');
   };
 
+  const handleSubmit = () => infoToast('Form submitted successfully');
+
+  const validationSchema = Yup.object({
+    select: Yup.number().max(5).required(),
+  });
+
   return (
     <Styles.Container>
       <NavHeader title="Place order" handleClick={handleNavigateBack} />
@@ -28,16 +37,22 @@ const PlaceOrder: React.FC<PlaceOrderProps> = ({fromScreen}) => {
           <TextContent>FIll your details</TextContent>
         </Styles.Header>
         <Styles.Body>
-          {/* <Formik initialValues={}>
+          <Formik
+            initialValues={{select: ''}}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}>
             {({dirty, errors}) => (
-              <TextInput
-                aria-label="input"
-                value="35"
-                placeholder="THis is Inputs"
-              />
+              <>
+                <Select
+                  options={countries}
+                  name="select"
+                  label="Select Label"
+                  id="select"
+                  required
+                />
+              </>
             )}
-          </Formik> */}
-          <Select />
+          </Formik>
         </Styles.Body>
         <Styles.Footer>
           <MyButton

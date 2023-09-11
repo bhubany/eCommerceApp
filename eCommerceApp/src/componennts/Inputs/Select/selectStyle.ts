@@ -15,6 +15,14 @@ const Wrapper = styled(View)`
   flex-direction: column;
 `;
 
+const Label = styled(View)`
+  width: 80%;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+`;
+
 const Selector = styled(TouchableOpacity)`
   border: solid ${COLORS.BLACK} 1px;
   border-radius: 10px;
@@ -31,7 +39,7 @@ const OptionWrapper = styled(View)`
   width: 80%;
   border-radius: 4px;
   elevation: 3;
-  margin-top: 46px;
+  margin-top: 54px;
   position: absolute;
   background-color: ${COLORS.WHITE};
   opacity: 1;
@@ -56,5 +64,20 @@ const Option = styled(TouchableOpacity)`
   border-bottom-color: ${COLORS.LIGHT_GREY};
 `;
 
-const Styles = {Container, Wrapper, Selector, OptionWrapper, SearchBox, Option};
+const Error = styled(View)`
+  width: 80%;
+  margin: 5px 0;
+  margin-left: auto;
+`;
+
+const Styles = {
+  Container,
+  Wrapper,
+  Label,
+  Selector,
+  OptionWrapper,
+  SearchBox,
+  Option,
+  Error,
+};
 export default Styles;

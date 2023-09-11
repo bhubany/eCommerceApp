@@ -51,3 +51,4 @@ export const EditIcon = getMuiIcons('edit', COLORS.SUCCESS, 20);
 export const PlaceOrderIcon = getMuiIcons('shopping-cart', COLORS.WHITE, 20);
 export const UpArrow = getMuiIcons('keyboard-arrow-up', COLORS.BLACK, 20);
 export const DownArrow = getMuiIcons('keyboard-arrow-down', COLORS.BLACK, 20);
+export const Clear = getMuiIcons('clear', COLORS.BLACK, 20);

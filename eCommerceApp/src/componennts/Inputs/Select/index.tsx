@@ -1,36 +1,62 @@
-import {countries} from 'common/datas';
-import React, {useRef, useState} from 'react';
-import {FlatList, Text} from 'react-native';
+import {COLORS} from 'common/enums';
+import {TextContent} from 'common/styles';
+import {FieldHookConfig, useField, useFormikContext} from 'formik';
+import React, {FC, useRef, useState} from 'react';
+import {FlatList, Text, TextInput} from 'react-native';
 import {DownArrow, UpArrow} from '../../../componennts/Icons';
+import {Option, SelectProps} from './select';
 import Styles from './selectStyle';
 
-const Select = ({options = countries}) => {
+const Select: FC<FieldHookConfig<string> & SelectProps> = ({
+  options,
+  label,
+  onChange,
+  disabled = false,
+  required,
+  ...props
+}) => {
   const [clicked, setClicked] = useState<boolean>(false);
-  const [data, setData] = useState(countries);
-  const [selected, setSelected] = useState('Select Country');
-  const searchRef = useRef();
+  const [data, setData] = useState(options);
+  const [selected, setSelected] = useState<string>(options[0].label);
+  const searchRef = useRef<TextInput | null>(null);
+  const [field, meta] = useField({...props});
+  const {setFieldValue} = useFormikContext();
 
-  const handleSelect = (value: string) => {
-    setSelected(value);
+  const handleSelect = (value: Option) => {
+    setSelected(value.label);
     setClicked(prev => !prev);
     handleSearch('');
-    searchRef.current.clear();
+    searchRef?.current?.clear();
+    if (onChange) {
+      onChange(value.value);
+    } else {
+      setFieldValue(field.name, value.value);
+    }
   };
 
   const handleSearch = (keyword: string) => {
     if (keyword !== '') {
       const tempData = options.filter(
-        item => item.country.toLowerCase().indexOf(keyword) > -1,
+        item => item.label.toLowerCase().indexOf(keyword) > -1,
       );
       setData(tempData);
     } else {
-      setData(countries);
+      setData(options);
     }
   };
   return (
     <Styles.Container>
       <Styles.Wrapper>
+        {label ? (
+          <Styles.Label>
+            <TextContent>{label}</TextContent>
+            {required ? (
+              <TextContent color={COLORS.DANGER}>*</TextContent>
+            ) : null}
+          </Styles.Label>
+        ) : null}
         <Styles.Selector
+          disabled={disabled}
           activeOpacity={1}
           onPress={() => setClicked(prev => !prev)}>
           <Text>{selected}</Text>
@@ -46,15 +72,18 @@ const Select = ({options = countries}) => {
             <FlatList
               data={data}
               renderItem={({item, index}) => (
-                <Styles.Option
-                  key={index}
-                  onPress={() => handleSelect(item.country)}>
-                  <Text>{item.country}</Text>
+                <Styles.Option key={index} onPress={() => handleSelect(item)}>
+                  <Text>{item.label}</Text>
                 </Styles.Option>
               )}
             />
           </Styles.OptionWrapper>
         ) : null}
+        <Styles.Error>
+          {meta.error && (
+            <TextContent color={COLORS.DANGER}>{meta.error}</TextContent>
+          )}
+        </Styles.Error>
       </Styles.Wrapper>
     </Styles.Container>
   );
