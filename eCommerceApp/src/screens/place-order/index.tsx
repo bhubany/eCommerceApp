@@ -8,6 +8,7 @@ import React from 'react';
 import * as Yup from 'yup';
 import MyButton from '../../componennts/Buttons';
 import {PlaceOrderIcon} from '../../componennts/Icons';
+import Radio from '../../componennts/Inputs/Radio';
 import Select from '../../componennts/Inputs/Select';
 import NavHeader from '../../componennts/Nav-Header';
 import {PlaceOrderProps} from './placeOrder';
@@ -26,7 +27,8 @@ const PlaceOrder: React.FC<PlaceOrderProps> = ({fromScreen}) => {
   const handleSubmit = () => infoToast('Form submitted successfully');
 
   const validationSchema = Yup.object({
-    select: Yup.number().max(5).required(),
+    select: Yup.number().required(),
+    radio: Yup.number().required(),
   });
 
   return (
@@ -49,6 +51,15 @@ const PlaceOrder: React.FC<PlaceOrderProps> = ({fromScreen}) => {
                   label="Select Label"
                   id="select"
                   required
+                />
+                <Radio
+                  name="radio"
+                  label="SelectGender"
+                  value={'F'}
+                  options={[
+                    {value: 'M', label: 'Male'},
+                    {value: 'F', label: 'Female'},
+                  ]}
                 />
               </>
             )}
